@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVOCADO</title>
+    <link rel="stylesheet" href="file.css">
+	
+<h1></h1>
+
+
+</head>
+
+<body>
+<div class="all">
+<div class="main" id="main">
+    <div class="left">
+		<img class="Loginimg" src="img/LogoNoBackground.png" alt="Logo" >
+	</div>
+
+	<div class="vline">
+
+	</div>
+
+    <div class="right" id="right">
+		<div class="inputs">
+			<input type="text" class="email" placeholder="EMAIL ADDRESS">
+			<hr>
+			<br>
+			<input type="password" class="password" placeholder="PASSWORD">
+			<hr>
+				<div class="forget_password">
+					
+					<a class="fpasswordlink" href="#" onclick="forgot()">Forget Password?</a>
+					<script>
+						function forgot(){
+							var info = document.getElementById("right")
+							var forgot= document.getElementById("fpassword")
+							var mains= document.getElementById("main")
+							
+							info.style.display="none";
+							forgot.style.display="block";
+							mains.style.opacity="30%";
+							forgot.style.opacity="100%";
+						}
+					</script>
+					
+				</div>	
+		</div>
+			
+		<div class="login">
+			
+			<br>
+			<button>Login</button>
+			
+			<p>Don't have an account? <a href="#" style="color: #D8C690;" onclick="hide()">Register</a></p>
+			<script>
+				function hide() {
+					var info = document.getElementById("info");
+					var right = document.getElementById("right");
+					info.style.display = "block";
+					right.style.display = "none"
+				}
+			</script>
+		</div>
+	</div>
+	<div class="info" id="info" style="display: none;">
+		<input type="text" id="name" class="name" name="name" placeholder="NAME">
+		<hr class="hr1"><br>
+		<input type="text" id="email" class="email" name="email"placeholder="EMAIL ADDRESS">
+		<hr class="hr1"><br>
+		<input type="text" id="number" class="number" name="number" placeholder="PHONE NUMBER">
+		<hr class="hr1"><br>
+		<input type="text" id="password" class="password" name="password" placeholder="PASSWORD">
+		<hr class="hr1"><br>
+		<input type="text" id="cpassword" class="password" name="cpassword" placeholder="CONFIRM PASSWORD">
+		<hr class="hr1"><br>
+		<button class="button">Register</button>
+		<br>
+		<br>
+			<div>
+				<button class="back" id="back" onclick="unhide()" > Back</button>
+				<script>
+					function unhide() {
+							var info = document.getElementById("info");
+							var right = document.getElementById("right");
+							info.style.display = "none";
+							right.style.display = "block";
+							
+					}
+				</script>
+			</div>
+	</div>
+</div>
+	<div class="fpassword" id="fpassword" style="display: none;">
+		<br><br><br><br>
+		<input class="femail" type="text" id="email1" name="email"placeholder="EMAIL ADDRESS">
+		<br><br><br>
+		<input class="femail" type="text" id="email2" name="email"placeholder="CONFIRM EMAIL ADDRESS">
+		<button class="send" onclick="unforgot()">Send</button>
+		<script>
+			function unforgot(){
+				var info = document.getElementById("right")
+				var forgot= document.getElementById("fpassword")
+				var mains= document.getElementById("main")
+				info.style.display="block";
+				forgot.style.display="none";
+				mains.style.opacity="100%";
+				
+			}
+		</script>
+	</div>
+</div>
+</body>
+</html>

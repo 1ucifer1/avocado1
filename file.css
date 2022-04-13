@@ -1,0 +1,251 @@
+
+body{
+    background-image:linear-gradient(to right, #000000 , #303030);
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.all{
+position: absolute;
+}
+
+.left{
+    /*margin-left: -18%;*/
+    position: fixed;
+    left: -16%;
+    box-sizing: border-box;
+    
+}
+
+.vline{
+    box-sizing: border-box;
+    border-left: 0.5px solid #D8C690;
+    height: 600px;
+    position: fixed;
+    left: 50%;
+    /*margin-left: -3px;
+    margin-top: 5%;*/
+    top: 10%;
+    opacity: 80%;
+}
+
+.right{
+    box-sizing: border-box;
+    position: fixed;
+    top: 39%;
+    left: 68%;
+}
+
+::placeholder{
+    box-sizing: border-box;
+    color: #D8C690;
+}
+
+a {box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    
+}
+
+p{
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    margin-left: 20%;
+
+}
+input[type=text]{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: transparent;
+    color: #D8C690;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+    font-size: 17px;
+    line-height: 42px;
+    opacity: 90%;
+    width: 250px;
+}
+
+input[type=password]{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: #D8C690; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+    font-size: 17px;
+    line-height: 42px;
+    opacity: 90%;
+    width: 250px;
+}
+
+hr{box-sizing: border-box;
+    position: relative;
+    background-color: #D8C690;
+    border: solid 0.5px;
+    border-color: #D8C690;
+    margin-top: -3%;
+    opacity: 50%;
+    width: 100%;
+}
+
+button{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #494949;
+    border:none;
+    font-size: 28px;
+    color: #D8C690;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    opacity: 90%;
+
+}
+.back{
+    position: absolute;
+}
+/*button effect*/
+button:after {
+    box-sizing: border-box;
+    content: "";
+    background: #868686;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 110%;
+    margin-left: -20px ;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s  ;
+    -webkit-transition: 0s  ;
+    -moz-transition: 0s  ;
+    -ms-transition: 0s  ;
+    -o-transition: 0s  ;
+}
+
+button:hover{ 
+  background-color: #5e5e5e;  
+}
+
+/*button effect*/
+
+.forget_password{
+    
+    box-sizing: border-box;
+    position: fixed;
+    left: 78.3%;
+    top: 53%;
+}
+.fpassword{
+    overflow: hidden;
+    position: fixed;
+    margin-left: 34.5%;
+    margin-top: 15%;
+    box-sizing: border-box;
+    background-image:linear-gradient(to right, #000000 , #1a1a1a);
+    width: 30%;
+    border-radius: 5%;
+}
+.femail{
+    position: fixed;
+    left: 41.5%;
+    border: transparent;
+    box-sizing: border-box;
+    background-image: url(img/email.png);
+    visibility: visible;
+    background-size: 20px;
+    background-repeat:no-repeat;
+    background-position: right;
+    padding-right: 22px;
+}
+.send{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #494949;
+    border:none;
+    font-size: 18px;
+    color: #D8C690;
+    padding: 10px;
+    text-align:center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 20%;
+    height: 10%;
+    opacity: 90%;
+    border-radius: 9px;
+    margin-left: 40%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    
+}
+.info{
+    box-sizing: border-box;
+    position: fixed;
+    top: 24%;
+    left: 68%;
+}
+
+.name{
+  background-image: url(img/user.png);
+  visibility: visible;
+  background-size: 25px;
+  background-repeat:no-repeat;
+  background-position: right;
+  padding-right: 15%;
+}
+
+.email{
+  background-image: url(img/email.png);
+  visibility: visible;
+  background-size: 22px;
+  background-repeat:no-repeat;
+  background-position: right;
+  padding-right: 15%;
+}
+
+.password{
+  background-image: url(img/password.png);
+  visibility: visible;
+  background-size: 25px;
+  background-repeat:no-repeat;
+  background-position: right;
+  padding-right: 15%;
+}
+
+.number{
+  background-image: url(img/number.png);
+  visibility: visible;
+  background-size: 20px;
+  background-repeat:no-repeat;
+  background-position: right;
+  padding-right: 15%;
+}
+
+.fpasswordlink{
+  position: fixed;
+  margin-left: 1%;
+  margin-top: 0%;
+}
+
+*:focus{
+  outline: none;
+}
