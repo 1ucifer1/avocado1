@@ -1,13 +1,13 @@
 
 body{
-    background-image:rgb(122, 122, 122);
+    background-color: #cfcfcf;
     display:flex;
     flex-direction: row;
     box-sizing: border-box;
+    align-items: center;
 }
 .h{
     color: #D8C690;
-    
 }
 .container a{
     text-decoration: none;
@@ -43,6 +43,7 @@ body{
 }
 .header{
     padding: 20px;
+    width: 1436px;
     
 }
 .logo{ 
@@ -58,7 +59,7 @@ body{
     top: 0;
     left: 40px;
     width: 100%;
-    height: 10%;
+    height: 70px;
     padding: 0;
     display: flex;
     justify-content:space-between;
@@ -84,5 +85,25 @@ hr{
     border: solid 0.5px;
     border-color: #D8C690;
     opacity: 50%;
+}
+.parent{
+    background-color: #F4F4F4; 
+    position:absolute;
+    top: 85px;
+    left: 65px;
+    width: 1436px;
+    height: 627px;
+    padding: 0;
+    
+
+}
+.header2{
+    background-color: #5E5C5C;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0;
 }
 
