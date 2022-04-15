@@ -6,13 +6,16 @@ body{
     box-sizing: border-box;
     align-items: center;
 }
+
 .h{
     color: #D8C690;
 }
+
 .container a{
     text-decoration: none;
     color: #D8C690;
 }
+
 .menu {
     position: absolute;
     width: 50px; /* Set a width if you like */
@@ -94,9 +97,8 @@ hr{
     width: 1436px;
     height: 627px;
     padding: 0;
-    
-
 }
+
 .header2{
     background-color: #5E5C5C;
     position:absolute;
@@ -105,5 +107,43 @@ hr{
     width: 100%;
     height: 70px;
     padding: 0;
+    color:#D8C690;
 }
+
+.header2content{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.header2Image{
+    height: 100%;
+    width: 68px;
+    margin-left: 10px;
+    filter: invert(0.7) sepia(1);
+    -webkit-filter: invert(0.7) sepia(1);
+}
+
+#header2image{
+    width: 38px;
+    margin: 16px;
+}
+
+.header2Text{
+    color: #D8C690;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 500;
+    width: 50px;
+    margin-top: 22px;
+    margin-left: -550px;
+}
+
+.child{
+    flex: 1;
+}
+
+.child:first-child {
+    margin-right: 0px;
+} 
 
