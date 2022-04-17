@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
-    <title>AGENDA</title>
+    <title>legislations</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="agenda.css">
+    <link rel="stylesheet" href="legislations.css">
 
     
 </head>
@@ -45,8 +45,104 @@
         <br>
         <a href="#"><i class="fa-solid fa-gear"></i></a>
     </div>
-    <div class="parent">
+    <div class="parent" id="parent">
         <div class="header2">
+            <div class="header2content">
+
+                <div class="child header2Image">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <div class="child header2Text">
+                    Time Tracking
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                    <input class="search_bar" type="text" id="search_bar" name="search_bar">
+                </div>
+            </div>
+        </div>
+        <div class="list" >
+            <ul id="list">
+                <li class="element">
+                    <div class="Lname">
+                    <h7 class="lname" id="lname"></h7>
+                    
+                    <script>
+                        let name="sssssssssssssssssssssssssssssssssssssssssssssssssss";
+                        document.getElementById("lname").innerHTML = name;
+                    </script>
+                    </div>
+                    <div class="buttons">
+                    <button type="button" class="view">view</button>
+                    
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        
+                        }
+                    </script>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </div>
+        
+        
+            <button type="button" class="button_add" onclick="add()"> + </button>
+
+                <script>
+                    function add(){
+                        var hidden = document.getElementById("parent")
+                        var showen = document.getElementById("add_page")
+                        showen.style.display="block";
+                        hidden.style.opacity="30%";
+						showen.style.opacity="100%";
+                    
+                    }
+                </script>
+
+                <!--
+                <script>
+                    function add(){
+                    const node = document.createElement("li");
+                    const textnode = document.createTextNode("Water");
+                    node.appendChild(textnode);
+                    document.getElementById("list").appendChild(node);
+                    }
+                </script>
+                
+                -->
+            
+        </div>
+        <div class="add_page" id="add_page">
+            <form class="add">
+                <br><br><br><br>
+		        <input type="text" id="lawyer" name="lawyer"placeholder="LAWYER NAME">
+                <hr>
+		        <br><br>
+		        <input type="text" id="name" name="name"placeholder="NAME OF legislations">
+                <hr>
+                <br><br>
+                <input type = "file" name = "upload" accept = "image/*" />
+                <br><br><br>
+            <button type="button" class="send" onclick="">save</button>
+            <button type="button" class="back" onclick="back()"> back </button>
+            <script>
+                function back(){
+                    var hidden = document.getElementById("parent")
+                    var showen = document.getElementById("add_page")
+                    showen.style.display="none";
+                    hidden.style.opacity="100%";
+                }
+            </script>
+            </form>
 
         </div>
     </div>
