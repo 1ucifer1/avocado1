@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="child header2Text">
-                    Time Tracking
+                    legislations
                 </div>
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass" ></i>
@@ -62,6 +62,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="list" >
             <ul id="list">
                 <li class="element">
@@ -75,7 +76,6 @@
                     </div>
                     <div class="buttons">
                     <button type="button" class="view">view</button>
-                    
                     <button type="button" class="edit" onclick="add()" >edit</button>
                     <script>
                         function add(){
@@ -94,7 +94,42 @@
             </ul>
         </div>
         
-        
+        -->
+        <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                <tr>
+                <th>Legislations Name</th>
+                <th><span class="actions">Action</span></th>
+                </tr>
+                </thead>
+            <tbody>
+            <tr>
+                <td><a href="#">RA0449</a></td>
+                <td>
+                    <div class="buttons">
+    
+                        <button type="button" class="view">view</button>
+                        <button type="button" class="edit" onclick="add()" >edit</button>
+                        <script>
+                            function add(){
+                                var hidden = document.getElementById("parent")
+                                var showen = document.getElementById("add_page")
+                                showen.style.display="block";
+                                hidden.style.opacity="30%";
+                                showen.style.opacity="100%";
+                            }
+                        </script>
+    
+                        </div>
+                
+                </td>
+                </tr>
+            
+    
+            </tbody>
+            </table>
+        </div>
             <button type="button" class="button_add" onclick="add()"> + </button>
 
                 <script>

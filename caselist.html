@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="caselist.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--
+    <div id="app">
+        <div>{{f}}</div>
+        <button>notok</button>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <script src="caselist.js"></script>
+    -->
+    
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="img/LogoName.png" >
+            <div class="links">
+                <a href="#">Help</a>
+                <span class="h">  |  </span>
+                <a href="#">About us</a>
+                <span class="h">  |  </span>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="menu">
+        <a href="#" class="active"><i class="fa-solid fa-bars">
+        </i> </a>
+        <br>
+        <br>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-building-columns"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-file-circle-check"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-box-archive"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+    </div>
+    <div class="parent" id="parent">
+        <div class="header2">
+            <div class="header2content">
+
+                <div class="child header2Image">
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+
+                <div class="child header2Text">
+                    case list
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                    <input class="search_bar" type="text" id="search_bar" name="search_bar">
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="list" >
+            <ul id="list">
+                <li class="element">
+                    <div class="Lname">
+                        
+                        
+                        <div class="inputs">
+                            
+                            <div id="app">
+                                <h7 class="case_number">case number :&nbsp {{case_number}}</h7>
+                                <h7 class="client_name">client name:&nbsp{{client_name}}</h7>
+                                <br>
+                                <h7 class="case_name">case name:&nbsp{{case_name}}</h7>
+                                <h7 class="case_status">case status:&nbsp{{case_status}}</h7>
+                            </div>
+                            <script src="https://unpkg.com/vue@3.0.5"></script>
+                            <script src="caselist.js"></script>
+
+                        </div>
+                    
+                    
+                        <div class="buttons">
+
+                        <button type="button" class="view">view</button>
+                        <button type="button" class="edit" onclick="add()" >edit</button>
+                        <script>
+                            function add(){
+                                var hidden = document.getElementById("parent")
+                                var showen = document.getElementById("add_page")
+                                showen.style.display="block";
+                                hidden.style.opacity="30%";
+                                showen.style.opacity="100%";
+                            }
+                        </script>
+
+                        </div>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </div>
+    -->
+        
+    <div class="table-responsive">
+        <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+            <tr>
+            <th>Case Number</th>
+            <th>Case Name</th>
+            <th>Client Name</th>
+            <th>Case Status</th>
+            <th>Action</th>
+            </tr>
+            </thead>
+        <tbody>
+        <tr>
+            <td><a href="#">RA0449</a></td>
+            <td>masr le el tyaran</td>
+            <td>omar mohamed</td>
+            <td><span class="badge badge-success">closed</span></td>
+            <td>
+                <div class="buttons">
+
+                    <button type="button" class="view">view</button>
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        }
+                    </script>
+
+                    </div>
+            
+            </td>
+            </tr>
+            <tr>
+                <td><a href="#">RA0449</a></td>
+                <td>masr le el tyaran</td>
+                <td>omar mohamed</td>
+                <td><span class="badge badge-success">closed</span></td>
+                <td>
+                <div class="buttons">
+                    <button type="button" class="view">view</button>
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        }
+                    </script>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">RA0449</a></td>
+                <td>masr le el tyaran</td>
+                <td>omar mohamed</td>
+                <td><span class="badge badge-success">closed</span></td>
+                <td>
+                <div class="buttons">
+                    <button type="button" class="view">view</button>
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        }
+                    </script>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">RA0449</a></td>
+                <td>masr le el tyaran</td>
+                <td>omar mohamed</td>
+                <td><span class="badge badge-success">closed</span></td>
+                <td>
+                <div class="buttons">
+                    <button type="button" class="view">view</button>
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        }
+                    </script>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">RA0449</a></td>
+                <td>masr le el tyaran</td>
+                <td>omar mohamed</td>
+                <td><span class="badge badge-success">closed</span></td>
+                <td>
+                <div class="buttons">
+                    <button type="button" class="view">view</button>
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        }
+                    </script>
+
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+        </table>
+    </div>
+        
+            <button type="button" class="button_add" onclick="add()"> + </button>
+
+                <script>
+                    function add(){
+                        var hidden = document.getElementById("parent")
+                        var showen = document.getElementById("add_page")
+                        showen.style.display="block";
+                        hidden.style.opacity="30%";
+						showen.style.opacity="100%";
+                    
+                    }
+                </script>
+
+                <!--
+                <script>
+                    function add(){
+                    const node = document.createElement("li");
+                    const textnode = document.createTextNode("Water");
+                    node.appendChild(textnode);
+                    document.getElementById("list").appendChild(node);
+                    }
+                </script>
+                
+                -->
+            
+        </div>
+        <div class="add_page" id="add_page">
+            <form class="add">
+                <br><br><br><br>
+		        <input type="text" id="lawyer" name="lawyer"placeholder="LAWYER NAME">
+                <hr>
+		        <br><br>
+		        <input type="text" id="name" name="name"placeholder="NAME OF legislations">
+                <hr>
+                <br><br>
+                <input type = "file" name = "upload" accept = "image/*" />
+                <br><br><br>
+            <button type="button" class="send" onclick="">save</button>
+            <button type="button" class="back" onclick="back()"> back </button>
+            <script>
+                function back(){
+                    var hidden = document.getElementById("parent")
+                    var showen = document.getElementById("add_page")
+                    showen.style.display="none";
+                    hidden.style.opacity="100%";
+                }
+            </script>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
