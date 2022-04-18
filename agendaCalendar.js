@@ -80,3 +80,9 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+renderCalendar();
+window.onload = function(){
+document.getElementById('right').click();
+document.getElementById('left').click();
+}
