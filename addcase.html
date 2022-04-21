@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
+    <title>Add Case</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="addcase.css">
+
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="img/LogoName.png" >
+            <div class="links">
+                <a href="#">Help</a>
+                <span class="h">  |  </span>
+                <a href="#">About us</a>
+                <span class="h">  |  </span>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="menu">
+        <a href="#" class="active"><i class="fa-solid fa-bars">
+        </i> </a>
+        <br>
+        <br>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-building-columns"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-file-circle-check"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-box-archive"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+    </div>
+
+    <div class="parent" id="parent">
+        <div class="header2">
+            <div class="header2content">
+                <div class="child header2Image">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                </div>
+                <div class="child header2Text">
+                    Add Case
+                </div>
+                
+            </div>
+        </div>
+        
+        <form class="inputs" id="inputs" action="">
+            <div class="pos" id="pos">
+            <div class="case_name">
+                <h3>Case Name</h3>
+                <input type="text" placeholder="case name">
+            </div>
+            <div class="case_type">
+                <h3>Case type</h3>
+                <input type="text" placeholder="case type">
+            </div>
+            <div class="contender_attachments">
+                <h3>Contender attachments</h3>
+                <input type = "file" name = "upload" accept = "image/*" />
+            </div>
+            <div class="court">
+                <h3>Court</h3>
+                <select name="activity" class="inputsSelect">
+                    <option value="activityName">محكمة شمال القاهرة</option>
+                    <option value="activityName">محكمة جنوب القاهرة</option>
+                    <option value="activityName">شبرا</option>
+                    <option value="activityName">روض الفرج</option>
+                    <option value="activityName">الازبكية</option>
+                    <option value="activityName">ربولاق</option>
+                    <option value="activityName">الدرب الأحمر</option>
+                    <option value="activityName">السيدة زينب</option>
+                    <option value="activityName"> الجمالية</option>
+                    <option value="activityName"> الوايلي</option>
+                    <option value="activityName"> مصر الجديدة</option>
+                    <option value="activityName"> الزيتون</option>
+                    <option value="activityName">أحداث القاهرة</option>
+                </select>
+            </div>
+            <div class="contender">
+                <h3>Contender</h3>
+                <input type="text" placeholder="contender">
+            </div>
+
+
+            <div class="session">
+                <h3>session</h3>
+                <input type="text" placeholder="normal" onclick="session_show()"readonly> 
+            </div>
+
+
+
+            <div class="expert_session">
+                <h3> </h3>
+                <input type="text" placeholder="expert" onclick="expert_session_show()" readonly>
+            </div>
+
+            <div class="expenses">
+                <h3>Expenses</h3>
+                <input type="text" placeholder="expenses">
+            </div>
+            <div class="payment">
+                <h3>Payment</h3>
+                <input type="text" placeholder="payment">
+            </div>
+            <div class="client">
+                <h3>Client</h3>
+                <select name="activity" class="inputsSelect">
+                    <option value="activityName"> omar shawky</option>
+                    <option value="activityName">mohamed amr</option>
+                    <option value="activityName">malak habib</option>
+                    <option value="activityName">ezz el din </option>
+                </select>
+            </div>
+            <div class="investigation">
+                <h3>Investigaion</h3>
+                <input type="text" placeholder="investigation" onclick="" readonly>
+            </div>
+            <div class="client_attachments">
+                <h3>Client attachments</h3>
+                <input type = "file" name = "upload" accept = "image/*" multiple="multiple">
+            </div>
+            <div class="content">
+                <h3>Content</h3>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                
+            </div>
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                
+            </div>
+            <div class="buttons">
+            <button type="button" class="send" onclick="">save</button>
+            <br>
+            <button type="button" class="back"  onclick="window.location.href='http://127.0.0.1:5500/caselist.html'"> back </button>
+            </div>
+        </div>
+                    <!-- the session tap-->
+                    <div class="session_tap" id="session_tap" style="display:none;">
+                    <input type="text" id="session_requirements" class="session_requirements"  placeholder="Session Requirements">
+                    <hr class="hr1"><br>
+                    <input type="text" id="session_reason" class="session_reason" placeholder="Session Reason">
+                    <hr class="hr1"><br>
+                    <input type="date" id="session_date" class="session_date"  placeholder="Session Date">
+                    <hr class="hr1"><br>
+                    <input type="date" id="next_date" class="next_date"  placeholder="Next Date">
+                    <hr class="hr1"><br>
+                    <input type = "file" id="session_Attachments" class="session_Attachments" placeholder="session_attachments" accept = "image/*" multiple="multiple" />
+                    <hr class="hr1"><br>
+                    <input type="text" id="role_number" class="role_number" placeholder="Role Number">
+                    <hr class="hr1"><br>
+                    <div class="session_buttons">
+                    <button class="save">Save </button>
+                    <button class="back" id="back" onclick="session_unhide()"> Back</button>
+                    
+                        </div>
+                    </div>
+
+
+                    <!-- the expert session tap-->
+            <div class="expert_session_tap" id="expert_session_tap" style="display:none;">
+                    <input type="text" id="expert_session_reason" class="expert_session_reason" placeholder="Expert Session Reason">
+                    <hr class="hr1"><br>
+                    <input type="date" id="expert_session_date" class="expert_session_date"  placeholder="Expert Session Date">
+                    <hr class="hr1"><br>
+                    <input type="text" id="office_address" class="office_address"  placeholder="Office Address">
+                    <hr class="hr1"><br>
+                    <input type = "file" id="session_Attachments" class="session_Attachments" placeholder="Expert_Session_Attachments" accept = "image/*" multiple="multiple"/>
+                    <hr class="hr1"><br>
+                    <input type="text" id="expert_Name" class="expert_name" placeholder="Expert Name">
+                    <hr class="hr1"><br>
+                    <input type="text" id="decision" class="decision" placeholder="decision">
+                    <hr class="hr1"><br>
+                    <div class="session_buttons">
+                        <button class="save">Save </button>
+                        <button class="back" id="back" onclick="expert_session_unhide()"> Back</button>
+                        
+                    </div>
+            </div>
+        </form>
+
+        <!-- java script -->
+        <script>
+            function session_show(){
+                var sessiontap = document.getElementById("session_tap");
+                var pos = document.getElementById("pos");
+                sessiontap.style.display="block";
+                pos.style.opacity="20%";
+            }
+        </script>
+        <script>
+            function expert_session_show(){
+                var expertsessiontap = document.getElementById("expert_session_tap");
+                var pos = document.getElementById("pos");
+                expertsessiontap.style.display="block";
+                pos.style.opacity="20%";
+            }
+        </script>
+        <script>
+            function session_unhide() {
+            var sessiontap = document.getElementById("session_tap");
+            var pos = document.getElementById("pos");
+            sessiontap.style.display="none";
+            pos.style.display="block";
+                        }
+        </script>
+        <script>
+            function expert_session_unhide() {
+            var expertsessiontap = document.getElementById("expert_session_tap");
+            var pos = document.getElementById("pos");
+            expertsessiontap.style.display="none";
+            pos.style.display="block";
+                    }
+        </script>
+        <!---->
+</div>
+</body>
+</html>
