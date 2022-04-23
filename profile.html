@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img alt="logoName" class="logo" src="img/LogoName.png" >
+            <div class="links">
+                <a href="#">Help</a>
+                <span class="h">  |  </span>
+                <a href="#">About us</a>
+                <span class="h">  |  </span>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="menu">
+        <a href="#" class=""><i class="fa-solid fa-bars">
+        </i> </a>
+        <br>
+        <br>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-building-columns"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-file-circle-check"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-box-archive"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+    </div>
+    <div class="parent">
+        <div class="header2">
+            <div class="header2content">
+
+                <div class="child header2Image">
+                    <img id="header2image" alt="Time Tracker Logo" src="img/calendar.svg" >
+                </div>
+
+                <div class="child header2Text">
+                    Investigation
+                </div>
+
+            </div>
+        </div>
+
+        <form class="inputs">
+            
+            <div class="name">
+                <i class="fa-solid fa-user iconFilter "></i>
+                <label for="name" class="inputsName">Name</label>
+                <br>
+                <input type="text" name="name" class="inputsSelect">    
+                <br>
+            </div>
+
+            <div class="mobileNumber">
+                <i class="fa-solid fa-phone iconFilter"></i>
+                <label for="mobileNumber" class="inputsName">Phone Number</label>
+                <br>
+                <input type="tel" placeholder="Ex: 01X XXXX XXXX" maxlength="13" name="mobileNumber" class="inputsSelect">
+                <br>
+            </div>
+
+            <div class="company">
+                <i class="fa-solid iconFilter"></i>
+                <label for="company" class="inputsName">Company Name</label>
+                <br>
+                <input type="text" name="company" class="inputsSelect">
+                <br>
+            </div>
+
+            <div class="gender">
+                <i class="fa-solid fa-male iconFilter"></i>
+                <label for="content" class="inputsName">Gender</label>
+                <br>
+                <select type="text" name="content" class="inputsSelect">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+            </div>
+
+            <div class="emailAddress">
+                <i class="fa-solid fa-mail-bulk iconFilter"></i>
+                <label for="emailAddresss" class="inputsName">Email Address</label>
+                <br>
+                <input type="email" name="emailAddresss" class="inputsSelect">
+                <br>
+            </div>
+
+            <div class="officeAddress">
+                <i class="fa-solid fa-address-card iconFilter"></i>
+                <label for="officeAddress" class="inputsName">Office Address</label>
+                <br>
+                <input type="text" name="officeAddress" class="inputsSelect">
+                <br>
+            </div>
+
+            <div class="verification">
+                <i class="fa-solid fa-check iconFilter"></i>
+                <label for="verification" class="inputsName">Verification</label>
+                <br>
+                <input placeholder="Not Verified" type="text" name="verification" class="inputsSelect">
+                <div class="verificationImage">Verify</div>
+                <br>
+            </div>
+
+            <div class="dateOfBirth">
+                <i class="fa-solid fa-calendar-check iconFilter"></i>
+                <label for="dateOfBirth" class="inputsName">Date of Birth</label>
+                <br>
+                <input type="date" name="dateOfBirth" class="inputsSelect">
+                <br>
+            </div>
+
+            <div class="buttons">
+            <button type="submit" name="SEARCH" value="search" class="search button">SAVE</button>
+            <i class="icon fa fa-search"></i>
+            <br>
+            <button type="reset" name="RESET" value="reset" class="reset button">CLEAR</button>
+            <i class="icon fa fa-refresh"></i>
+            <div class="iconBtn"></div>
+            <div class="iconBtn"></div>
+            </div>
+            
+        </form>
+
+    </div>
+</body>
+</html>
