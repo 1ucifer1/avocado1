@@ -301,7 +301,7 @@ h3{
     
 }
 /*first row*/
-.case_name{
+.circle{
     position:absolute;
     top: 0px;
     left: 20px;
@@ -344,13 +344,14 @@ h3{
 }
 .expert_session{
     position: absolute;
-    top: 125.5px;
+    top: 100px;
     left: 505px;
 }
 
 .session input,.expert_session input{
     width: 55%;
-    padding-left: 13%;
+    padding-left: 30px;
+    max-width: 48%;
 }
 .session input:hover ,.investigation input:hover,.expert_session input:hover{
     background-color: #ffffff;
@@ -373,6 +374,21 @@ h3{
     width: 419px;
     height: 527px;
 }
+.label1{
+    position: absolute;
+    top: 160px;
+    left: 63px;
+}
+.label2{
+    position: absolute;
+    top: 224px;
+    left: 63px;
+}
+.label3{
+    position: absolute;
+    top: 99px;
+    left: 80px;
+}
 .session_tap input ,.expert_session_tap input{
     border: none;
     position: relative;
@@ -380,6 +396,7 @@ h3{
     top: 70px;
     
 }
+
 .session_tap button ,.expert_session_tap button{
     position: relative;
     left: 55px;
@@ -400,18 +417,24 @@ h3{
 .client{
     position:absolute;
     top: 200px;
-    left: 195px;
+    left: 20px;
 }
 .investigation{
     position:absolute;
     top: 200px;
-    left: 555px;
+    left: 380px;
 }
 .client_attachments{
     position:absolute;
     top: 200px;
-    left: 915px;
+    left: 740px;
 }
+.client_name{
+    position:absolute;
+    top: 200px;
+    left: 1100px;
+}
+
 
 
 /**/
