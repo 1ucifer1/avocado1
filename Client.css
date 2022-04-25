@@ -116,18 +116,11 @@ hr{
     display: flex;
     flex-direction: row;
     width: 50%;
+    position: absolute;
+    top: 0px;
+    left: -67px;
 }
 
-.header2Image{
-    height: 100%;
-    width: 68px;
-    margin-left: 10px;
-    position: relative;
-    top: 14px;
-    left: 20px;
-    font-size: xx-large;
-
-}
 
 #header2image{
     width: 38px;
@@ -144,6 +137,7 @@ hr{
     margin-left: -550px;
     letter-spacing: 3px;
     text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+    
 }
 
 .child{
@@ -180,37 +174,15 @@ hr{
     margin-top: 15px;
     margin-bottom: 20px;
     height: 30px;
-    width: 300px;
+   width: 254px; 
     font-family: "Quicksand", sans-serif;
 }
 
-
-.back {
-
-    height: 40px;
-    width: 150px;
-    margin:20px 0 0 0;
-    box-sizing: border-box;
-    background-color: #494949;
-    border-radius: 0;
-    border:none;
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
-    color: #D8C690;
-    padding: 0px; 
-    margin-right: 5px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    opacity: 95%;
-}
 
 .buttons{
     position: absolute;
-    left: 955px;
-    top:  315px;
+    left: 921px;
+    top: 287px;
 }
 
 .button{
@@ -287,52 +259,65 @@ hr{
     margin-bottom: 20px;
 }
 
-.emailAddress{
-    position: absolute;
-    top: 0px;
-    left: 450px;
+.notes{
+       position: absolute;
+    top: 250px;
+    left: 738px;
+    width: 555px;
+    height: 250;
 }
 
-.officeAddress{
+.codenum{
     position: absolute;
-    top: 89px;
-    left: 450px;
+    top: 263px;
+    left: 364px;
 }
 
-.verification{
+.email{
+    position: absolute;
+    top: 550px;
+    left: 170px;
+}
+
+
+.postal code{
     position: absolute;
     top: 180px;
-    left: 450px;
+    left: 500px;
 }
 
-.verificationImage{
-    position: absolute;
-    color: #D8C690;
-    background-color: #363636;    
-    height: 27.5px;
-    width: 80px;
-    left: 227px;
-    top: 37px;
-    text-align: center;
-    align-content: center;
-    font-family: "Quicksand", sans-serif;
-    font-size: 15px;
-    padding-top: 7px;
-}
-
-.dateOfBirth{
+.attachments{
     position: absolute;
     top: 0px;
-    left: 900px;
+    left: 1000px;
 }
 
-.gender{
+.attachmentsPos{
+    margin-top: 21px;
+}
+
+.city{
     position: absolute;
-    top: 90px;
-    left: 900px;
+    top: 380px;
+    left: 708px;
 }
 
-.iconFilter{
-    filter: invert(0.7);
-    -webkit-filter: invert(0.7);
+.category{
+    position: absolute;
+    top: 273px;
+    left: 526px;
 }
+
+.taxi{
+    position: absolute;
+    top: 363px;
+    left: 527px;
+}
+
+.country{
+    position: absolute;
+    top: 550px;
+    left: 531px;
+}
+
+

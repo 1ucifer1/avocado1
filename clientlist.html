@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
+    <title>Client List</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="clientlist.css">
+
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="img/LogoName.png" >
+            <div class="links">
+                <a href="#">Help</a>
+                <span class="h">  |  </span>
+                <a href="#">About us</a>
+                <span class="h">  |  </span>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="menu">
+        <a href="#" class="active"><i class="fa-solid fa-bars">
+        </i> </a>
+        <br>
+        <br>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-building-columns"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-file-circle-check"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-box-archive"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+    </div>
+    <div class="parent" id="parent">
+        <div class="header2">
+            <div class="header2content">
+
+                <div class="child header2Image">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+
+                <div class="child header2Text">
+                    Client list
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                    <input class="search_bar" type="text" id="search_bar" name="search_bar">
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="list" >
+            <ul id="list">
+                <li class="element">
+                    <div class="Lname">
+                    <h7 class="lname" id="lname"></h7>
+                    
+                    <script>
+                        let name="sssssssssssssssssssssssssssssssssssssssssssssssssss";
+                        document.getElementById("lname").innerHTML = name;
+                    </script>
+                    </div>
+                    <div class="buttons">
+                    <button type="button" class="view">view</button>
+                    <button type="button" class="edit" onclick="add()" >edit</button>
+                    <script>
+                        function add(){
+                            var hidden = document.getElementById("parent")
+                            var showen = document.getElementById("add_page")
+                            showen.style.display="block";
+                            hidden.style.opacity="30%";
+                            showen.style.opacity="100%";
+                        
+                        }
+                    </script>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </div>
+        
+        -->
+        <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                <tr>
+                <th>client name</th>
+                <th><span class="actions">Action</span></th>
+                </tr>
+                </thead>
+            <tbody>
+            <tr>
+                <td><a href="#">RA0449</a></td>
+                <td>
+                    <div class="buttons">
+    
+                        <button type="button" class="view">view</button>
+                        <button type="button" class="edit"  onclick="window.location.href='http://127.0.0.1:5500/Client.html'">edit</button>
+                        <script>
+                            function add(){
+                                var hidden = document.getElementById("parent")
+                                var showen = document.getElementById("add_page")
+                                showen.style.display="block";
+                                hidden.style.opacity="30%";
+                                showen.style.opacity="100%";
+                            }
+                        </script>
+    
+                        </div>
+                
+                </td>
+                </tr>
+            
+    
+            </tbody>
+            </table>
+        </div>
+        <button type="button" class="button_add" onclick="window.location.href='http://127.0.0.1:5500/Client.html'"> + </button>
+
+        </div>
+    
+</body>
+</html>

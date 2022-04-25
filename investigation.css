@@ -188,7 +188,7 @@ hr{
     top:  120px;
 }
 
-.button{
+.save_button,.back_button{
     height: 40px;
     width: 200px;
     margin:20px 0 0 0;
@@ -200,7 +200,7 @@ hr{
     font-size: 18px;
     color: #D8C690;
     padding: 0px;
-    padding-left: 30px;
+    padding-left: 0px;
     padding-bottom: 2px;
     text-align: center;
     transition-duration: 0.4s;

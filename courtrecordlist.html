@@ -5,20 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="caselist.css">
-    <title>Caselist</title>
+    <link rel="stylesheet" href="courtrecordlist.css">
+    <title>court record list</title>
 </head>
 <body>
-    
-    <!--
-    <div id="app">
-        <div>{{f}}</div>
-        <button>notok</button>
-    </div>
-    <script src="https://unpkg.com/vue@3.0.5"></script>
-    <script src="caselist.js"></script>
-    -->
-    
     <div class="header">
         <div class="container">
             <img class="logo" src="img/LogoName.png" >
@@ -60,8 +50,8 @@
                 </div>
 
                 <div class="child header2Text">
-                    <A class="caselist">Case List</A>
-                    <a class="courtlist" href="http://127.0.0.1:5500/courtrecordlist.html" style="text-decoration: none;" >Court Record List</a>
+                    <a href="http://127.0.0.1:5500/caselist.html" style="text-decoration: none;" class="caselist">Case List</a>
+                    <a class="courtlist">Court Record List</a>
                 </div>
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass" ></i>
@@ -69,28 +59,24 @@
                 </div>
             </div>
         </div>
-
+        
     <div class="table-responsive">
         <table class="table align-items-center table-flush">
             <thead class="thead-light">
             <tr>
-            <th>Case Number</th>
-            <th>Case type</th>
-            <th>Client Name</th>
-            <th>Case Status</th>
-            <th>Action</th>
+            <th>Court Name</th>
+            <th>Topic</th>
+            <th>actions</th>
             </tr>
             </thead>
         <tbody>
             <tr>
                 <td><a href="#">RA0449</a></td>
                 <td>masr le el tyaran</td>
-                <td>omar mohamed</td>
-                <td><span class="badge badge-success">closed</span></td>
                 <td>
                 <div class="buttons">
                     <button type="button" class="view">view</button>
-                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcase.html'">edit</button>
+                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcourtrecord.html'">edit</button>
 
                     </div>
                 </td>
@@ -99,12 +85,11 @@
             <tr>
                 <td><a href="#">RA0449</a></td>
                 <td>masr le el tyaran</td>
-                <td>omar mohamed</td>
-                <td><span class="badge badge-success">closed</span></td>
+
                 <td>
                 <div class="buttons">
                     <button type="button" class="view">view</button>
-                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcase.html'">edit</button>
+                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcourtrecord.html'">edit</button>
 
                     </div>
                 </td>
@@ -113,12 +98,11 @@
             <tr>
                 <td><a href="#">RA0449</a></td>
                 <td>masr le el tyaran</td>
-                <td>omar mohamed</td>
-                <td><span class="badge badge-success">closed</span></td>
+
                 <td>
                 <div class="buttons">
                     <button type="button" class="view">view</button>
-                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcase.html'">edit</button>
+                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcourtrecord.html'">edit</button>
 
                     </div>
                 </td>
@@ -126,14 +110,13 @@
             <tr>
                 <td><a href="#">RA0449</a></td>
                 <td>masr le el tyaran</td>
-                <td>omar mohamed</td>
-                <td><span class="badge badge-success">closed</span></td>
+
                 <td>
                 <div class="buttons">
                     <button type="button" class="view">view</button>
-                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcase.html'">edit</button>
+                    <button type="button" class="edit" onclick="window.location.href='http://127.0.0.1:5500/addcourtrecord.html'">edit</button>
 
-                    </div>
+                </div>
                 </td>
             </tr>
 
@@ -141,23 +124,8 @@
         </table>
     </div>
         
-            <button type="button" class="button_add" onclick="window.location.href='http://127.0.0.1:5500/addcase.html'"> + </button>
+            <button type="button" class="button_add" onclick="window.location.href='http://127.0.0.1:5500/addcourtrecord.html'"> + </button>
 
-                <!--
-                <script>
-                    function add(){
-                    const node = document.createElement("li");
-                    const textnode = document.createTextNode("Water");
-                    node.appendChild(textnode);
-                    document.getElementById("list").appendChild(node);
-                    }
-                </script>
-                
-                -->
-            
         </div>
-
-    </div>
-    
 </body>
 </html>

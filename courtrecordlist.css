@@ -11,7 +11,10 @@ body{
 }
 .container a{
     text-decoration: none;
-
+    color: #D8C690;
+}
+a{
+    text-decoration: none;
 }
 .menu {
     position: absolute;
@@ -72,12 +75,6 @@ body{
     letter-spacing: 5px;
     word-spacing: 15px;
 }
-/*
-.menu a.active {
-    background-color: #313131; 
-    color: #D8C690;
-}
-*/
 
 hr{
     background-color: #D8C690;
@@ -263,9 +260,7 @@ hr{
 .header2content a{
     color: #D8C690;
 }
-a{
-    text-decoration: none;
-}
+
 .header2content{
     display: flex;
     flex-direction: row;
@@ -280,9 +275,9 @@ a{
 }
 .caselist{
     position: absolute;
-    left: 108px;
+    left: 109px;
     top: 0px;
-    background-color: #f6f6f6;
+    background-color: #5E5C5C;
     height: 46px;
     width: 170px;
     padding-top: 24px;
@@ -292,15 +287,15 @@ a{
 .courtlist{
     
     position: absolute;
-    left: 308px;
+    left: 311px;
     top: 0px;
-    background-color: #5E5C5C;
+    background-color:#f6f6f6;
     height: 46px;
     padding-top: 24px;
     padding-left: 16px;
     padding-right: 16px;
 }
-.courtlist:hover{
+.caselist:hover{
     background-color:#dadada ;
 }
 

@@ -118,13 +118,15 @@ hr{
     flex-direction: row;
     width: 50%;
 }
-
 .header2Image{
     height: 100%;
     width: 68px;
     margin-left: 10px;
-    filter: invert(0.7) sepia(1);
-    -webkit-filter: invert(0.7) sepia(1);
+    position: relative;
+    top: 14px;
+    left: 20px;
+    font-size: xx-large;
+
 }
 
 #header2image{

@@ -96,26 +96,27 @@
                 <input type="text" placeholder="contender">
             </div>
 
-
+        
             <div class="session">
-                <h3>session</h3>
-                <input type="text" placeholder="normal" onclick="session_show()"readonly> 
+                
+                <button class="go_session" id="go_session" formaction="session.html"> Session</button>
+
             </div>
 
 
 
             <div class="expert_session">
-                <h3> Expert Session</h3>
-                <input type="text" placeholder="expert" onclick="expert_session_show()" readonly>
+                
+                <button class="go_exsession" id="go_exsession" formaction="expertsession.html"> Expert Session</button>
             </div>
 
             <div class="expenses">
                 <h3>Expenses</h3>
-                <input type="text" placeholder="expenses">
+                <input type="text" placeholder="expense" onclick="expense_show()" readonly>
             </div>
             <div class="payment">
                 <h3>Payment</h3>
-                <input type="text" placeholder="payment">
+                <input type="text" placeholder="payment" onclick="payment_show()" readonly>
             </div>
             <div class="client">
                 <h3>Client</h3>
@@ -126,9 +127,13 @@
                     <option value="activityName">ezz el din </option>
                 </select>
             </div>
+
+            <button type="button" class="button_add" onclick="add_show()"> + </button>
+            
+            
             <div class="investigation">
-                <h3>Investigaion</h3>
-                <input type="text" placeholder="investigation" onclick="" readonly>
+                
+                <button class="go_investigation" id="go_investigation" formaction="investigation.html"> Investigation</button>
             </div>
             <div class="client_attachments">
                 <h3>Client attachments</h3>
@@ -144,94 +149,121 @@
                 <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
                 
             </div>
-            <div class="client_name">
-                <h3>Client Name</h3>
-                <input type="text" placeholder="Client Name" onclick="" readonly>
-            </div>
+            
+            
             <div class="buttons">
             <button type="button" class="send" onclick="">save</button>
             <br>
             <button type="button" class="back"  onclick="window.location.href='http://127.0.0.1:5500/caselist.html'"> back </button>
             </div>
         </div>
-                    <!-- the session tap-->
-                    <div class="session_tap" id="session_tap" style="display:none;">
-                    <input type="text" id="session_requirements" class="session_requirements"  placeholder="Session Requirements">
-                    <hr class="hr1"><br>
-                    <input type="text" id="session_reason" class="session_reason" placeholder="Session Reason">
-                    <hr class="hr1"><br>
-                    <h5 class="label1">Session Date</h5>
-                    <input type="date" id="session_date" class="session_date"  placeholder="Session Date">
-                    <hr class="hr1"><br>
-                    <h5 class="label2">Next Date</h5>
-                    <input type="date" id="next_date" class="next_date"  placeholder="Next Date" >
-                    <hr class="hr1"><br>
-                    <input type = "file" id="session_Attachments" class="session_Attachments" placeholder="session_attachments" accept = "image/*" multiple="multiple" />
-                    <hr class="hr1"><br>
-                    <input type="text" id="role_number" class="role_number" placeholder="Role Number">
-                    <hr class="hr1"><br>
-                    <div class="session_buttons">
-                    <button class="save">Save </button>
-                    <button class="back" id="back" onclick="session_unhide()"> Back</button>
-                    
-                        </div>
+                    <!-- the expense tap-->
+                    <div class="expense_tap" id="expense_tap" style="display:none;" action="">
+                    <form action="">
+                        <input type="text" id="expense" class="expense"  placeholder="Expense">
+                        <hr class="hr1"><br>
+                        <input type="text" id="expense_name" class="expense_name" placeholder="Expense Name">
+                        <hr class="hr1"><br>
+                        <button class="save">Save </button>
+                        <button class="back" id="back" onclick="expense_hide()"> Back</button>
+                    </form>
                     </div>
+                    
 
 
-                    <!-- the expert session tap-->
-            <div class="expert_session_tap" id="expert_session_tap" style="display:none;">
-                    <input type="text" id="expert_session_reason" class="expert_session_reason" placeholder="Expert Session Reason">
+                    <!-- the payment tap -->
+            <div class="payment_tap" id="payment_tap" style="display:none;">
+                <form action="">
+
+                    <input type="text" id="payment" class="payment" placeholder="Payment">
                     <hr class="hr1"><br>
-                    <h5 class="label3">Session Date</h5>
-                    <input type="date" id="expert_session_date" class="expert_session_date"  placeholder="Expert Session Date">
+                    
+                    <input type="text" id="payment_name" class="payment_name"  placeholder="Payment Name">
                     <hr class="hr1"><br>
-                    <input type="text" id="office_address" class="office_address"  placeholder="Office Address">
-                    <hr class="hr1"><br>
-                    <input type = "file" id="session_Attachments" class="session_Attachments" placeholder="Expert_Session_Attachments" accept = "image/*" multiple="multiple"/>
-                    <hr class="hr1"><br>
-                    <input type="text" id="expert_Name" class="expert_name" placeholder="Expert Name">
-                    <hr class="hr1"><br>
-                    <input type="text" id="decision" class="decision" placeholder="decision">
-                    <hr class="hr1"><br>
+                    
                     <div class="session_buttons">
                         <button class="save">Save </button>
-                        <button class="back" id="back" onclick="expert_session_unhide()"> Back</button>
+                        <button class="back" id="back" onclick="payment_hide()"> Back</button>
                         
                     </div>
+                </form>
+            </div>
+            
+            <!-- add client tap-->
+            <div class="add_tap" id="add_tap" style="display:none;">
+                <form class="add">
+                    <br><br><br><br>
+                    <input type="text" id="national nummber" name="national nummber"placeholder="national Nummber">
+                    <hr>
+                    <br><br>
+                    <input type="text" id="client list" name="client list"placeholder="Client NAME">
+                    <hr>
+                    <br><br>
+                    <input type="email" id="Email" name="Email"placeholder="Email">
+                    <hr>
+                    <br><br>
+                    <input type="text" id="address" name="address"placeholder="Address">
+                    <hr>
+                    <br><br>
+                    <input type="text" id="phone nummber" name="phone nummber"placeholder="Phone Nummber">
+                    <hr>
+                    <br><br>
+                    <br><br><br>
+                <button type="button" class="send" onclick="">save</button>
+                <button type="button" class="back" onclick="add_hide()"> back </button>
+                </form>
+    
             </div>
         </form>
 
         <!-- java script -->
         <script>
-            function session_show(){
-                var sessiontap = document.getElementById("session_tap");
+            function add_show(){
+                var addtap = document.getElementById("add_tap");
                 var pos = document.getElementById("pos");
-                sessiontap.style.display="block";
+                addtap.style.display="block";
                 pos.style.opacity="20%";
             }
         </script>
         <script>
-            function expert_session_show(){
-                var expertsessiontap = document.getElementById("expert_session_tap");
+                function add_hide(){
+                        var addtap = document.getElementById("add_tap");
+                        var pos = document.getElementById("pos");
+                        addtap.style.display="none";
+                        pos.style.opacity="100%";                   
+                    }
+        </script>
+        <script>
+            function expense_show(){
+                var expensetap = document.getElementById("expense_tap");
                 var pos = document.getElementById("pos");
-                expertsessiontap.style.display="block";
+                expensetap.style.display="block";
                 pos.style.opacity="20%";
             }
         </script>
         <script>
-            function session_unhide() {
-            var sessiontap = document.getElementById("session_tap");
+            function expense_hide() {
+            var expensetap = document.getElementById("expense_tap");
             var pos = document.getElementById("pos");
-            sessiontap.style.display="none";
-            pos.style.display="block";
+            expensestap.style.display="none";
+            pos.style.opacity="100%";    
                         }
         </script>
         <script>
-            function expert_session_unhide() {
-            var expertsessiontap = document.getElementById("expert_session_tap");
+            function payment_show(){
+                var paymenttap = document.getElementById("payment_tap");
+                var pos = document.getElementById("pos");
+                paymenttap.style.display="block";
+                pos.style.opacity="20%";
+            }
+        </script>
+        
+        <script>
+            function payment_hide() {
+            var paymenttap = document.getElementById("payment_tap");
             var pos = document.getElementById("pos");
-            expertsessiontap.style.display="none";
-            pos.style.display="block";
+            paymenttap.style.display="none";
+            pos.style.opacity="100%";    
                     }
         </script>
         <!---->
