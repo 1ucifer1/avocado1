@@ -189,7 +189,6 @@ hr{
 
 
 .back{
-
     height: 40px;
     width: 150px;
     margin:20px 0 0 0;
@@ -224,7 +223,7 @@ hr{
     width: 145px;
     margin:20px 0 0 0;
     box-sizing: border-box;
-    background-color: #494949;
+    background-color: #363636;
     border-radius: 0;
     border:none;
     font-family: "Quicksand", sans-serif;
@@ -244,30 +243,13 @@ hr{
     -o-border-radius: 0;
 }
 
-.button:after {
-    box-sizing: border-box;
-    content: "";
-    background: #868686;
-    display: block;
-    position: absolute;
-    padding-top: 40px;
-    padding-left: 190px;
-    margin-left: -11px ;
-    margin-top: -30px;
-    opacity: 0;
-    transition: all 0.8s
-}
-
-.button:active:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s  ;
-    -webkit-transition: 0s  ;
-    -moz-transition: 0s  ;
-    -ms-transition: 0s  ;
-    -o-transition: 0s  ;
+.button:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 
 .button:hover{ 
