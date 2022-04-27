@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
+    <title>Session</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="addcourtrecord.css">
+
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="img/LogoName.png" >
+            <div class="links">
+                <a href="#">Help</a>
+                <span class="h">  |  </span>
+                <a href="#">About us</a>
+                <span class="h">  |  </span>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="menu">
+        <a href="#" class="active"><i class="fa-solid fa-bars">
+        </i> </a>
+        <br>
+        <br>
+        <a href="#"><i class="fa-solid fa-calendar"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-building-columns"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-file-circle-check"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-box-archive"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+    </div>
+
+    <div class="parent" id="parent">
+        <div class="header2">
+            <div class="header2content">
+                <div class="child header2Image">
+                    
+                </div>
+                <div class="child header2Text">
+                    Add Court Record
+                </div>
+                
+            </div>
+        </div>
+        
+        <form class="inputs" id="inputs" action="">
+
+            <div class="court">
+                <h3>Court</h3>
+                <select name="activity" class="inputsSelect">
+                    <option value="activityName">محكمة شمال القاهرة</option>
+                    <option value="activityName">محكمة جنوب القاهرة</option>
+                    <option value="activityName">شبرا</option>
+                    <option value="activityName">روض الفرج</option>
+                    <option value="activityName">الازبكية</option>
+                    <option value="activityName">ربولاق</option>
+                    <option value="activityName">الدرب الأحمر</option>
+                    <option value="activityName">السيدة زينب</option>
+                    <option value="activityName"> الجمالية</option>
+                    <option value="activityName"> الوايلي</option>
+                    <option value="activityName"> مصر الجديدة</option>
+                    <option value="activityName"> الزيتون</option>
+                    <option value="activityName">أحداث القاهرة</option>
+                </select>
+            </div>
+            
+            <div class="topic">
+                <h3>Topic</h3>
+                <input type="text" id="topic" class="topics"  placeholder="Topic" >
+            </div>
+            
+            <div class="attachments">
+                <h3>Attachments</h3>
+                <input type = "file" id="attachments" class="attachments" placeholder="Attachments" accept = "image/*" multiple="multiple" />
+            </div>
+            
+            <div class="lawyername">
+                <h3>Lawyer Name</h3>
+                <input type="text" id="lawyer_name" class="lawyer_name" placeholder="Lawyer Name">
+            </div>
+            
+            <div class="clientname">
+                <h3>Client Name</h3>
+                <input type="text" id="clientname" class="client_name" placeholder="Client Name">
+            </div>
+
+            <div class="notes">
+                <h3>Notes</h3>
+                <textarea name="notes " class="Notes" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="id">
+                <h3>ID</h3>
+                <input type="text" class="ID" placeholder="ID" ></input>
+            </div>
+            
+
+            <div class="addcourtrecord_buttons">
+                <form>
+                    <button class="save">Save </button>
+                    <br>
+                    <button class="back" id="back" formaction="courtrecordlist.html"> Back</button>
+                </form>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

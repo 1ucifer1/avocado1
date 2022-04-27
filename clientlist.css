@@ -11,11 +11,12 @@ body{
 }
 .container a{
     text-decoration: none;
-
+    color: #D8C690;
 }
 .menu {
     position: absolute;
-    width: 50px;
+    width: 50px; /* Set a width if you like */
+    /*background-color: #313131;*/
     background: rgb(32, 32, 32);
     top: 0;
     left:0px
@@ -131,7 +132,7 @@ li{ list-style-type: none;
 .button_add{
     background-color: #5E5C5C;
     position:absolute;
-    top: 535px;
+    top: 523px;
     left: 1310px;
     width: 73px;
     height: 73px;
@@ -142,13 +143,14 @@ li{ list-style-type: none;
     font-size: 45px;
     border-radius: 50%;
     border: 10px;
+    cursor: pointer;
     
 }
 .view{
     
     position: relative;
-    left: 27px;
-    top: 1px;
+    left: 155px;
+    top: 0px;
     width: 116px;
     height: 50px;
     background-color: #494949;
@@ -166,8 +168,8 @@ li{ list-style-type: none;
 }
 .edit{
     position:relative;
-    left: 70px;
-    top: 1px;
+    left: 253px;
+    top: 0px;
     width: 116px;
     height: 50px;
     background-color: #494949;
@@ -194,9 +196,10 @@ li{ list-style-type: none;
     box-sizing: border-box;
     background-color: #5E5C5C;
     width: 529px;
-    height: 415px;
+    height: 592px;
     border-radius: 10%;
 }
+
 .add{    
     position: relative;
     top: -2%;
@@ -244,6 +247,7 @@ hr{
     opacity: 90%;
     left: -30px;
     bottom: 15px;
+    top: -53px;
 }
 ::placeholder{
     box-sizing: border-box;
@@ -260,12 +264,7 @@ hr{
     padding: 0;
     color:#D8C690;
 }
-.header2content a{
-    color: #D8C690;
-}
-a{
-    text-decoration: none;
-}
+
 .header2content{
     display: flex;
     flex-direction: row;
@@ -277,31 +276,6 @@ a{
     width: 68px;
     margin-left: 10px;
 
-}
-.caselist{
-    position: absolute;
-    left: 108px;
-    top: 0px;
-    background-color: #f6f6f6;
-    height: 46px;
-    width: 170px;
-    padding-top: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-.courtlist{
-    
-    position: absolute;
-    left: 308px;
-    top: 0px;
-    background-color: #5E5C5C;
-    height: 46px;
-    padding-top: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-.courtlist:hover{
-    background-color:#dadada ;
 }
 
 #header2image{
@@ -319,7 +293,7 @@ a{
     left: 10px;
     margin: 0%;
     padding: 0%;
-    max-width: 61%;
+    max-width: 55%;
     
 }
 .header2Text{
@@ -355,7 +329,7 @@ a{
 }
 .header2Image{
     position: relative;
-    top: 20px;
+    top: 14px;
     left: 20px;
     font-size: xx-large;
 }
@@ -371,6 +345,10 @@ th{
     background-color: #5E5C5C;
     height: 70px;
 
+}
+.actions{
+    position: relative;
+    left: 195px;
 }
 .table-responsive{
     overflow-y: scroll ;
@@ -391,48 +369,3 @@ table{
     text-align: center;
     border-collapse: collapse;
 }
-
-/*
-.case_number{
-    position: absolute;
-    top: -11px;
-    left: 5px;
-    max-width: 400px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.client_name{
-    position: absolute;
-    top: -11px;
-    left: 464px;
-    max-width:  400px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.case_name{
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    margin: 5px;
-    max-width:  400px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: #363636;
-}
-.case_status{
-    position: absolute;
-    top: 20px;
-    left: 460px;
-    margin: 5px;
-    max-width:  400px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    border: #D8C690;
-
-}
-*/

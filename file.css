@@ -11,30 +11,26 @@ position: absolute;
 }
 
 .left{
-    /*margin-left: -18%;*/
-    position: fixed;
-    left: -16%;
+    position: absolute;
+    left: -226px;
     box-sizing: border-box;
-    
 }
 
 .vline{
     box-sizing: border-box;
     border-left: 0.5px solid #D8C690;
     height: 600px;
-    position: fixed;
-    left: 50%;
-    /*margin-left: -3px;
-    margin-top: 5%;*/
-    top: 10%;
+    position: absolute;
+    left: 730px;
+    top: 45px;
     opacity: 80%;
 }
 
 .right{
     box-sizing: border-box;
-    position: fixed;
-    top: 39%;
-    left: 68%;
+    position: absolute;
+    top: 289px;
+    left: 1030px;
 }
 
 ::placeholder{
@@ -141,17 +137,15 @@ button:active:after {
 }
 
 button:hover{ 
-  background-color: #5e5e5e;  
+background-color: #5e5e5e;  
 }
-
-/*button effect*/
 
 .forget_password{
     
     box-sizing: border-box;
-    position: fixed;
-    left: 78.3%;
-    top: 53%;
+    position: absolute;
+    left: 150px;
+    top: 105px;
 }
 .fpassword{
     overflow: hidden;
