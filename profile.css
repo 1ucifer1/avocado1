@@ -123,21 +123,12 @@ hr{
 .header2Image{
     height: 100%;
     width: 68px;
-<<<<<<< HEAD
-    margin-left: 25px;
-    margin-top: 18px;
-    /*
-    filter: invert(0.7) sepia(1);
-    -webkit-filter: invert(0.7) sepia(1);
-    */
-=======
     margin-left: 10px;
     position: relative;
-    top: 14px;
-    left: 20px;
+    top: 17px;
+    left: 15px;
     font-size: xx-large;
 
->>>>>>> 2af77de840ce13e989acfe904dda84abfd23a0fe
 }
 
 #header2image{
@@ -197,7 +188,7 @@ hr{
 }
 
 
-.back {
+.back{
 
     height: 40px;
     width: 150px;
@@ -210,6 +201,7 @@ hr{
     font-size: 18px;
     color: #D8C690;
     padding: 0px; 
+    padding-left: 30px;
     margin-right: 5px;
     text-align: center;
     transition-duration: 0.4s;
@@ -221,7 +213,7 @@ hr{
 
 .buttons{
     position: absolute;
-    left: 846px;
+    left: 900px;
     top:  193px;
     display: flex;
     flex-direction: row;
@@ -229,7 +221,7 @@ hr{
 
 .button{
     height: 40px;
-    width: 200px;
+    width: 145px;
     margin:20px 0 0 0;
     box-sizing: border-box;
     background-color: #494949;
@@ -238,9 +230,8 @@ hr{
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
     color: #D8C690;
-    padding: 0px;
-    padding-left: 30px;
     padding-bottom: 2px;
+    padding-left:30px ;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
@@ -286,7 +277,7 @@ hr{
 .icon{
     z-index: 1;
     position: relative;
-    left: -188px;
+    left: -107px;
     top: 32px;
     filter: invert(0.7) sepia(1);
     -webkit-filter: invert(0.7) sepia(1);
@@ -336,7 +327,7 @@ input{
     height: 27.5px;
     width: 80px;
     left: 227px;
-    top: 37px;
+    top: 36px;
     text-align: center;
     align-content: center;
     font-family: "Quicksand", sans-serif;
@@ -428,6 +419,7 @@ td{
     color: #D8C690;
     font-family: "Quicksand", sans-serif;
     border: none;
+    cursor: pointer;
 }
 
 .tableBtn:active{
@@ -460,5 +452,4 @@ td{
     outline: none;
     text-align: center;
     font-family: "Quicksand", sans-serif;
-
 }
