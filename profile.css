@@ -99,6 +99,8 @@ hr{
     width: 1436px;
     height: 627px;
     padding: 0;
+    overflow: scroll;
+    overflow-x:hidden;
 }
 
 .header2{
@@ -121,14 +123,18 @@ hr{
 .header2Image{
     height: 100%;
     width: 68px;
-    margin-left: 10px;
+    margin-left: 25px;
+    margin-top: 18px;
+    /*
     filter: invert(0.7) sepia(1);
     -webkit-filter: invert(0.7) sepia(1);
+    */
 }
 
 #header2image{
     width: 38px;
     margin: 16px;
+    color: #D8C690;
 }
 
 .header2Text{
@@ -138,7 +144,7 @@ hr{
     font-weight: 00;
     width: 50px;
     margin-top: 20px;
-    margin-left: -550px;
+    margin-left: -567px;
     letter-spacing: 3px;
     text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
 }
@@ -162,7 +168,7 @@ hr{
 .inputs{
     
     position:relative;
-    left: 7%;
+    left: 6%;
     top: 110px;
     width: 90%;
     height: 80%;
@@ -184,8 +190,10 @@ hr{
 
 .buttons{
     position: absolute;
-    left: 955px;
-    top:  315px;
+    left: 846px;
+    top:  193px;
+    display: flex;
+    flex-direction: row;
 }
 
 .button{
@@ -247,8 +255,8 @@ hr{
 .icon{
     z-index: 1;
     position: relative;
-    left: -193px;
-    top: 0px;
+    left: -188px;
+    top: 32px;
     filter: invert(0.7) sepia(1);
     -webkit-filter: invert(0.7) sepia(1);
 }
@@ -258,8 +266,18 @@ hr{
     background-color: #363636;
     height: 40px;
     width: 40px;
-    top: -100px;
+    top: 20px;
+    left:-432px;
     margin-bottom: 20px;
+    margin-right: 176px;
+}
+
+.fa-save{
+margin-left: 2px;
+}
+
+input{
+    font-size: 15px;
 }
 
 .emailAddress{
@@ -310,4 +328,106 @@ hr{
 .iconFilter{
     filter: invert(0.7);
     -webkit-filter: invert(0.7);
+}
+
+
+.lawyerOrAdmin{
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 976px;
+    top: 295px;
+    font-family: "Quicksand", sans-serif;
+    font-size: larger;
+    background-color: inherit;
+    color: #363636;
+    width: 360px;
+    height: 100px;
+
+}
+
+.lawyersList{
+    position: absolute;
+    width: 1205px;
+    height: fit-content;
+    top:400px;
+    left: 86px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 2px solid;
+    border-color: #5E5C5C;
+}
+
+th{
+    background-color: #5E5C5C;
+    color: #D8C690;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 40px;
+    border: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+th:hover{
+    background-color: #868686;
+}
+
+td{
+    background-color: #ffffff;
+    line-height: 30px;
+    border: 1px solid;
+    border-color: #5E5C5C;
+}
+
+.table,th,td{
+    font-family: "Quicksand", sans-serif;
+}
+
+.tableBtn{
+    background-color: #5E5C5C;
+    color: #D8C690;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+}
+
+.tableBtn:active{
+    background-color: #313131;
+    box-shadow: 3px 2px 20px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.tableBtn:hover{
+    background-color: #696969;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.tableLastCol{
+    background-color: #5E5C5C;
+}
+
+.tableInput{
+    width: 97%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
 }

@@ -41,7 +41,7 @@
         <br>
         <a href="#"><i class="fa-solid fa-box-archive"></i></a>
         <br>
-        <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+        <a href="#" class="active"><i class="fa-solid fa-user-tie"></i></a>
         <br>
         <a href="#"><i class="fa-solid fa-user-group"></i></a>
         <br>
@@ -52,11 +52,12 @@
             <div class="header2content">
 
                 <div class="child header2Image">
-                    <img id="header2image" alt="Time Tracker Logo" src="img/calendar.svg" >
+                    <i class="fa-solid fa-user-edit fa-2x"></i>
+                    <!-- <img id="header2image" alt="Time Tracker Logo" src="img/calendar.svg" > -->
                 </div>
 
                 <div class="child header2Text">
-                    Investigation
+                    Profile
                 </div>
 
             </div>
@@ -68,7 +69,7 @@
                 <i class="fa-solid fa-user iconFilter "></i>
                 <label for="name" class="inputsName">Name</label>
                 <br>
-                <input type="text" name="name" class="inputsSelect">    
+                <input type="text" name="name" class="inputsSelect" id="name">    
                 <br>
             </div>
 
@@ -76,15 +77,15 @@
                 <i class="fa-solid fa-phone iconFilter"></i>
                 <label for="mobileNumber" class="inputsName">Phone Number</label>
                 <br>
-                <input type="tel" placeholder="Ex: 01X XXXX XXXX" maxlength="13" name="mobileNumber" class="inputsSelect">
+                <input type="tel" placeholder="Ex: 01X XXXX XXXX" maxlength="13" name="mobileNumber" class="inputsSelect" id="number">
                 <br>
             </div>
 
             <div class="company">
-                <i class="fa-solid iconFilter"></i>
+                <i class="fa-solid fa-building iconFilter"></i>
                 <label for="company" class="inputsName">Company Name</label>
                 <br>
-                <input type="text" name="company" class="inputsSelect">
+                <input type="text" name="company" class="inputsSelect" id="company">
                 <br>
             </div>
 
@@ -92,7 +93,7 @@
                 <i class="fa-solid fa-male iconFilter"></i>
                 <label for="content" class="inputsName">Gender</label>
                 <br>
-                <select type="text" name="content" class="inputsSelect">
+                <select type="text" name="content" class="inputsSelect" id="gender">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
@@ -103,7 +104,7 @@
                 <i class="fa-solid fa-mail-bulk iconFilter"></i>
                 <label for="emailAddresss" class="inputsName">Email Address</label>
                 <br>
-                <input type="email" name="emailAddresss" class="inputsSelect">
+                <input type="email" name="emailAddresss" class="inputsSelect" id="email">
                 <br>
             </div>
 
@@ -111,7 +112,7 @@
                 <i class="fa-solid fa-address-card iconFilter"></i>
                 <label for="officeAddress" class="inputsName">Office Address</label>
                 <br>
-                <input type="text" name="officeAddress" class="inputsSelect">
+                <input type="text" name="officeAddress" class="inputsSelect" id="address">
                 <br>
             </div>
 
@@ -119,7 +120,7 @@
                 <i class="fa-solid fa-check iconFilter"></i>
                 <label for="verification" class="inputsName">Verification</label>
                 <br>
-                <input placeholder="Not Verified" type="text" name="verification" class="inputsSelect">
+                <input placeholder="Not Verified" readonly type="text" name="verification" class="inputsSelect" id="verification">
                 <div class="verificationImage">Verify</div>
                 <br>
             </div>
@@ -128,13 +129,13 @@
                 <i class="fa-solid fa-calendar-check iconFilter"></i>
                 <label for="dateOfBirth" class="inputsName">Date of Birth</label>
                 <br>
-                <input type="date" name="dateOfBirth" class="inputsSelect">
+                <input type="date" id="dateOfBirth" class="inputsSelect" id="date">
                 <br>
             </div>
 
             <div class="buttons">
-            <button type="submit" name="SEARCH" value="search" class="search button">SAVE</button>
-            <i class="icon fa fa-search"></i>
+            <button type="button" name="SAVE" value="save" class="save button" onclick="addRow()">SAVE</button>
+            <i class="icon fa fa-save"></i>
             <br>
             <button type="reset" name="RESET" value="reset" class="reset button">CLEAR</button>
             <i class="icon fa fa-refresh"></i>
@@ -143,7 +144,83 @@
             </div>
             
         </form>
+        <!--
+        <div class="lawyerOrAdmin">
+            <label class="adminLabel" for="admin"> <i class="fa-solid fa-user-shield" for="admin"></i> Admin</label>
+            <input type="radio" name="lawyerAdmin" class="radioBtn admin" id="admin" value="Admin">
+            
+            <label class="lawyerLabel" for="lawyer"> <i class="fa-solid fa-user-tie" for="lawyer"></i> Lawyer</label>
+            <input type="radio" name="lawyerAdmin" class="radioBtn lawyer" id="lawyer" value="Lawyer">
+        </div>
+        -->
+       
+        <div class="lawyersList">
+            <table class="lawyersListTable table-sort" id="lawyersListTable">
+                <tr>
+                <th scope="col">Code</th>    
+                <th scope="col">Name</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Office Address</th>
+                <th scope="col">Company Name</th>
+                <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Omar Shawky</td>
+                    <td>Omarshawky@gmail.com</td>
+                    <td>01000000000</td>
+                    <td>Madinat Nasr - Cairo</td>
+                    <td>Facebook</td>
+                    <td>
+                        <input type="button" value="Edit" class="edit tableBtn">
+                        <input type="button" value="Save" class="save tableBtn">
+                        <input type="button" value="Delete" class="delete tableBtn">
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Abelrahman Atteya</td>
+                    <td>Abelrahmanatteya@yahoo.com</td>
+                    <td>01100000000</td>
+                    <td>Badr - Cairo</td>
+                    <td>Twitter</td>
+                    <td>
+                        <input type="button" value="Edit" class="edit tableBtn">
+                        <input type="button" value="Save" class="save tableBtn">
+                        <input type="button" value="Delete" class="delete tableBtn">
+                    </td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Muhammad Amr</td>
+                    <td>Muhammadamr@live.com</td>
+                    <td>01200000000</td>
+                    <td>Al Shorouq - Cairo</td>
+                    <td>Reddit</td>
+                    <td>
+                        <input type="button" value="Edit" class="edit tableBtn">
+                        <input type="button" value="Save" class="save tableBtn">
+                        <input type="button" value="Delete" class="delete tableBtn">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" id="new_name" class="tableInput"></td>
+                    <td><input type="email" id="new_email" class="tableInput"></td>
+                    <td><input type="number" id="new_number" class="tableInput"></td>
+                    <td><input type="text" id="new_address" class="tableInput"></td>
+                    <td><input type="text" id="new_company" class="tableInput"></td>
+                    <td><input type="button" class="add tableBtn" value="Add Row"></td>
+                </tr>
+
+            </table>
+            
+            <script src="profileLawyersList.js"></script>
+            
+            </div>
 
     </div>
 </body>
 </html>
+
