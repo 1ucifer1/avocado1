@@ -41,6 +41,12 @@ body{
     /* Dark grey background on mouse-over */
     background-color: #696969 ;
 }
+
+.menu a.active {
+    background-color: #313131; 
+    color: #D8C690;
+}
+
 .header{
     padding: 20px;
     width: 1436px;
@@ -48,6 +54,7 @@ body{
 }
 .logo{ 
     position: relative;
+    top: 4px;
     left: 30px;
     width: 300px;
 
@@ -85,7 +92,7 @@ hr{
     top: 85px;
     left: 65px;
     width: 1436px;
-    height: 627px;
+    height: 667px;
     padding: 0;
     
 
@@ -149,7 +156,7 @@ hr{
     top: 75px;
     background-color: #D8C690;
     border: solid 0.5px;
-    border-color: #D8C690;
+    border-color: #a9a9a9;
     margin-top: -1%;
     opacity: 50%;
     width: 59%;
@@ -159,19 +166,23 @@ hr{
     margin:20px 0 0 0;
     box-sizing: border-box;
     background-color: #494949;
-    border-radius: 0;
+    border-radius: 1px;
     border:none;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
     color: #D8C690;
-    padding: 0px; 
-    margin-right: 5px;
+    padding: 0px;
+    margin-right: 17px;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
     opacity: 95%;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
 }
 
 .send,.back,.save{
@@ -182,8 +193,42 @@ hr{
 
 .buttons{
     position: absolute;
-    left: 613px;
-    bottom: -500px;
+    left: 920px;
+    top: 422px;
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  
+}
+
+button:hover{
+    background-color: #696969;
+}
+
+button:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 ::placeholder{
@@ -211,6 +256,7 @@ hr{
 .header2Image{
     height: 100%;
     width: 68px;
+    margin-top: 5px;
     margin-left: 10px;
     position: relative;
     top: 14px;
@@ -220,13 +266,13 @@ hr{
 }
 
 .header2Text{
-    color: #D8C690;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    font-weight: 500;
+    color: #D8C690;    
+    font-family: 'Saira Extra Condensed', sans-serif;   
+    font-size: 30px;
+    font-weight: 00;
+    margin-top: 14px;
     width: 27px;
-    margin-top: 22px;
-    margin-left: -541px;
+    margin-left: -567px;
 }
 
 .child{
@@ -240,24 +286,30 @@ hr{
 .inputs{
     background-color:#F4F4F4;
     position: absolute;
-    top: 70px;
-    left: 1px;
-    width: 1434px;
+    top: 110px;
+    left: 33px;
+    width: 1393px;
     height: 557px;
     padding-left: 10px;
 }
 
 input{
     margin-top: -5px;
-    padding: 0%;
     font-family: "Quicksand", sans-serif;
-
     height: 30px;
     width: 300px;
     font-size: 15px;
-    line-height: 42px;
+    line-height: 36px;
     opacity: 90%;
     width: 250px;
+}
+
+.inputsText{
+    margin-top: 15px;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+    font-family: "Quicksand", sans-serif;
 }
 
 .inputsName{
@@ -282,12 +334,17 @@ h3{
 .court{
     position:absolute;
     top: 0px;
-    left: 380px;
+    left: 470px;
 }
+
+#court{
+    width: 316px;
+}
+
 .case_type{
     position:absolute;
     top: 0px;
-    left: 740px;
+    left: 920px;
 }
 
 .contender_attachments input, .client_attachments input{
@@ -296,12 +353,13 @@ h3{
 }
 .contender_attachments{
     position:absolute;
-    top: 3px;
-    left: 1100px;
+    top: 90px;
+    left: 920px;
 }
 .inputsSelect{
-    width: 251px;
-    height: 47px;
+    margin-top: 15px;
+    width: 281px;
+    height: 36px;
     font-family: "Quicksand", sans-serif;
     padding-left: 10px;
 }
@@ -309,34 +367,29 @@ h3{
 /*second row*/
 .contender{
     position:absolute;
-    top: 100px;
-    left: 20px;
+    top: 90px;
+    left: 470px;
 }
 .session{
     position:absolute;
-    top: 100px;
-    left: 380px;
+    top: 295px;
+    left: 920px;
 }
 .expert_session{
     position: absolute;
-    top: 100px;
-    left: 469px;
+    top: 295px;
+    left: 1087px;
 }
 
 .go_session{
     height: 40px;
-    width: 88px;
+    width: 150px;
     position: absolute;
-    top: 25.5px;
-    left: 10px;
-    
 }
 .go_exsession{
     height: 40px;
     width: 150px;
     position: absolute;
-    top: 25.5px;
-    left: 10px;
 }
 .session input:hover ,.investigation input:hover,.expert_session input:hover{
     background-color: #ffffff;
@@ -375,56 +428,57 @@ h3{
 }
 .expense_tap input ,.payment_tap input{
     border: none;
-    color: #D8C690;
+    color: black;
     position: relative;
     left: 85px;
     top: 81px;
-    
+    text-align: center;
+    outline: none;
 }
 .expense_tap input::placeholder ,.payment_tap input::placeholder,.add_tap input::placeholder{
     
-    color: #D8C690;
+    color: black;
     
 }
 
 .expense_tap button ,.payment_tap button{
     position: relative;
-    left: 55px;
+    left: 75px;
     bottom: -91px;
 }
 .expenses{
     position:absolute;
-    top: 100px;
-    left: 740px;
+    top: 180px;
+    left: 20px;
 }
 .payment{
     position:absolute;
-    top: 100px;
-    left: 1100px;
+    top: 180px;
+    left: 470px;
 }
 /**/
 /*third row*/
 .client{
     position:absolute;
-    top: 200px;
+    top: 90px;
     left: 20px;
 }
 .investigation{
     position:absolute;
     top: 203px;
-    left: 380px;
+    left: 400px;
 }
 .go_investigation{
     height: 40px;
-    width: 246px;
+    width: 317px;
     position: absolute;
-    top: 26px;
-    left: 2px;    
+    top: 156px;
+    left: 520px;    
 }
 .client_attachments{
     position:absolute;
-    top: 205px;
-    left: 740px;
+    top: 180px;
+    left: 920px;
 }
 .client_name{
     position:absolute;
@@ -434,37 +488,33 @@ h3{
 .button_add{
     background-color: #5E5C5C;
     position: absolute;
-    top: 244px;
-    left: 271px;
-    width: 47px;
-    height: 47px;
-    
+    top: 125px;
+    left: 300px;
+    width: 36px;
+    height: 36px;
+    border: none;
     text-decoration: none;
     display: block;
     color: #D8C690;
     font-size: 45px;
-    border: 10px;
-
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    padding: 0px;
 }
-.button_add:hover,.go_investigation:hover{
-    background-color: #cfcfcf;
-
-}
-
-
 
 /**/
 /*fourth row*/
 .content{
     position:absolute;
-    top: 300px;
-    left: 125px;
+    top: 270px;
+    left: 20px;
     overflow-wrap:normal;
 }
 .content textarea{
-    width: 432px;
+    width: 300px;
     height: 180px;
-    font-size:x-large;
+    padding: 10px;
+    font-size: 18px;
 }
 .notestext{
     overflow-wrap: break-word;
@@ -472,17 +522,19 @@ h3{
 }
 .notes{
     position:absolute;
-    top: 300px;
-    right: 200px;
+    top: 270px;
+    left: 470px;
 }
 .notes textarea{
-    width: 432px;
+    width: 300px;
     height: 180px;
-    font-size:x-large;
+    padding: 10px;
+    font-size:18px;
 }
 /**/
 .pos{
-    position: relative;
+    position: absolute;
+    top: 0px;
     left: 33px;
 }
 

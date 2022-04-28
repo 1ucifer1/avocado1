@@ -51,6 +51,7 @@ body{
 .logo{ 
     position: relative;
     left: 30px;
+    top: 4px;
     width: 300px;
 
     
@@ -139,14 +140,13 @@ hr{
 
 .header2Text{
     color: #D8C690;
-    font-family:"Quicksand", sans-serif;
-    font-size: 25px;
+    font-family: 'Saira Extra Condensed', sans-serif;   
+    font-size: 30px;
     font-weight: 00;
-    width: 50px;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-left: -567px;
     letter-spacing: 3px;
-    text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+    
 }
 
 .child{
@@ -222,25 +222,25 @@ hr{
     height: 40px;
     width: 145px;
     margin:20px 0 0 0;
+    margin-right: 24px;
     box-sizing: border-box;
     background-color: #363636;
-    border-radius: 0;
+    border-radius: 1px;
     border:none;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
     color: #D8C690;
     padding-bottom: 2px;
-    padding-left:30px ;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
     opacity: 90%;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
 }
 
 .button:active{
@@ -250,6 +250,11 @@ hr{
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .button:hover{ 
@@ -276,9 +281,6 @@ hr{
     margin-right: 176px;
 }
 
-.fa-save{
-margin-left: 2px;
-}
 
 input{
     font-size: 15px;
@@ -308,7 +310,7 @@ input{
     background-color: #363636;    
     height: 27.5px;
     width: 80px;
-    left: 227px;
+    left: 235px;
     top: 36px;
     text-align: center;
     align-content: center;
@@ -327,6 +329,11 @@ input{
     position: absolute;
     top: 90px;
     left: 900px;
+}
+
+#gender{
+    height: 35px;
+    width: 314px;
 }
 
 .iconFilter{

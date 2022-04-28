@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
 
     
 </head>
@@ -29,10 +32,12 @@
     </div>
     <!-- -->
     <div class="menu">
+        <a href="#"><i class="fa-solid fa-bars">
+        </i> </a>
         <br>
         <br>
         <br>
-        <br>
+        <a href="addcase.html"><i class="fa-solid fa-file-circle-check"></i></a>
         <br>
         <a href="agenda.html"><i class="fa-solid fa-calendar"></i></a>
         <br>
@@ -42,7 +47,7 @@
         <br>
         <a href="caselist.html"><i class="fa-solid fa-box-archive"></i></a>
         <br>
-        <a href="profile.html"><i class="fa-solid fa-user-tie"></i></a>
+        <a href="profile.html" class="active"><i class="fa-solid fa-user-tie"></i></a>
         <br>
         <a href="clientlist.html"><i class="fa-solid fa-user-group"></i></a>
         <br>
@@ -61,7 +66,7 @@
                 </div>
 
                 <div class="child header2Text">
-                    Profile
+                    PROFILE
                 </div>
 
             </div>
@@ -138,11 +143,9 @@
             </div>
 
             <div class="buttons">
-            <button type="button" name="SAVE" value="save" class="save button">SAVE</button>
-            <i class="icon fa fa-save"></i>
+            <button type="button" name="SAVE" value="save" class="save button"><i class="fa fa-save"></i> SAVE</button>
             
-            <button class="button click" id="back" formaction="addcase.html">BACK</button>
-            <i class="icon fa fa-backward"></i>
+            <button class="button click" id="back" formaction="addcase.html"><i class="fa fa-backward"></i> BACK</button>
             </div>
             
         </form>
