@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="addcase.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     
 </head>
 
@@ -27,7 +28,7 @@
     </div>
     <!-- -->
     <div class="menu">
-        <a href="#" class="active"><i class="fa-solid fa-bars">
+        <a href="#"><i class="fa-solid fa-bars">
         </i> </a>
         <br>
         <br>
@@ -35,7 +36,7 @@
         <br>
         <a href="#"><i class="fa-solid fa-building-columns"></i></a>
         <br>
-        <a href="#"><i class="fa-solid fa-file-circle-check"></i></a>
+        <a href="#" class="active"><i class="fa-solid fa-file-circle-check"></i></a>
         <br>
         <a href="#"><i class="fa-solid fa-box-archive"></i></a>
         <br>
@@ -62,19 +63,23 @@
         <form class="inputs" id="inputs" action="">
             <div class="pos" id="pos">
             <div class="circle">
-                <h3>Circle</h3>
-                <input type="text" placeholder="circle">
+                <i class="fa-solid fa-map-location-dot iconFilter"></i>
+                <label class="inputsName">Circle</label>
+                <input type="text">
             </div>
             <div class="case_type">
-                <h3>Case type</h3>
-                <input type="text" placeholder="case type">
+                <i class="fa-solid fa-file-archive iconFilter"></i>
+                <label class="inputsName">Case Type</label>
+                <input type="text">
             </div>
             <div class="contender_attachments">
-                <h3>Contender attachments</h3>
+                <i class="fa-solid fa-paperclip iconFilter"></i>
+                <label for="name" class="inputsName">Contender Attachments</label>
                 <input type = "file" name = "upload" accept = "image/*" />
             </div>
             <div class="court">
-                <h3>Court</h3>
+                <i class="fa-solid fa-building-shield iconFilter"></i>
+                <label for="name" class="inputsName">Court</label>
                 <select name="activity" class="inputsSelect">
                     <option value="activityName">محكمة شمال القاهرة</option>
                     <option value="activityName">محكمة جنوب القاهرة</option>
@@ -92,8 +97,9 @@
                 </select>
             </div>
             <div class="contender">
-                <h3>Contender</h3>
-                <input type="text" placeholder="contender">
+                <i class="fa-solid fa-person-circle-xmark iconFilter"></i>
+                <label for="name" class="inputsName">Contender</label>
+                <input type="text">
             </div>
 
         
@@ -111,20 +117,23 @@
             </div>
 
             <div class="expenses">
-                <h3>Expenses</h3>
+                <i class="fa-solid fa-money-check-dollar iconFilter"></i>
+                <label for="name" class="inputsName">Expenses</label>                
                 <input type="text" placeholder="expense" onclick="expense_show()" readonly>
             </div>
             <div class="payment">
-                <h3>Payment</h3>
-                <input type="text" placeholder="payment" onclick="payment_show()" readonly>
+                <i class="fa-solid fa-building-shield iconFilter"></i>
+                <label for="name" class="inputsName">Payment</label>                
+                <input type="text" onclick="payment_show()" readonly>
             </div>
             <div class="client">
-                <h3>Client</h3>
+                <i class="fa-solid fa-building-shield iconFilter"></i>
+                <label for="name" class="inputsName">Client</label>
                 <select name="activity" class="inputsSelect">
-                    <option value="activityName"> omar shawky</option>
-                    <option value="activityName">mohamed amr</option>
-                    <option value="activityName">malak habib</option>
-                    <option value="activityName">ezz el din </option>
+                    <option value="activityName"> Omar Shawky</option>
+                    <option value="activityName">Mohamed Amr</option>
+                    <option value="activityName">Malak Habib</option>
+                    <option value="activityName">Ezz El Din </option>
                 </select>
             </div>
 
