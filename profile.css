@@ -16,7 +16,8 @@ body{
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     width: 50px; /* Set a width if you like */
     /*background-color: #313131;*/
     background: rgb(32, 32, 32);
@@ -57,7 +58,8 @@ body{
     
 }
 .container{
-    position:absolute;
+    position:fixed;
+    z-index: 3;
     background-image:linear-gradient(to right,rgb(32, 32, 32),#363636);
     top: 0;
     left: 40px;

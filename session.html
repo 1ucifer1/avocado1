@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="session.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
 
     
 </head>
@@ -27,16 +32,18 @@
     </div>
     <!-- -->
     <div class="menu">
+        <a href="#"><i class="fa-solid fa-bars">
+        </i> </a>
         <br>
         <br>
         <br>
-        <br>
+        <a href="addcase.html"><i class="fa-solid fa-file-circle-check"></i></a>
         <br>
         <a href="agenda.html"><i class="fa-solid fa-calendar"></i></a>
         <br>
         <a href="legislations.html"><i class="fa-solid fa-building-columns"></i></a>
         <br>
-        <a href="models.html"><i class="fa-solid fa-file-circle-check"></i></a>
+        <a href="models.html"><i class="fa-solid fa-file-contract"></i></a>
         <br>
         <a href="caselist.html"><i class="fa-solid fa-box-archive"></i></a>
         <br>
@@ -57,7 +64,8 @@
                     
                 </div>
                 <div class="child header2Text">
-                    session
+                    <i class="fa fa-people-line"></i>
+                    SESSION
                 </div>
                 
             </div>
@@ -66,46 +74,60 @@
         <form class="inputs" id="inputs" action="">
 
             <div class="session_date">
-                <h3>Session Date</h3>
+                <i class="fa-solid fa-calendar-days iconFilter"></i>
+                <label for="session_date" class="inputsName">Session Date</label>
+                <br>
                 <input type="date" id="session_date" class="Session_date"  placeholder="Session Date">
             </div>
             
             <div class="next_date">
-                <h3>Next Date</h3>
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="next_date" class="inputsName">Next Date</label>
+                <br>
                 <input type="date" id="next_date" class="Nnext_date"  placeholder="Next Date" >
             </div>
             
             <div class="session_attachments">
-                <h3>Session Attachments</h3>
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="session_Attachments" class="inputsName">Session Attachments</label>
+                <br>
                 <input type = "file" id="session_Attachments" class="session_Attachments" placeholder="Session_attachments" accept = "image/*" multiple="multiple" />
             </div>
             
             <div class="role_number">
-                <h3>Role Number</h3>
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="role_number" class="inputsName">Role Number</label>
+                <br>
                 <input type="text" id="role_number" class="Role_number" placeholder="Role Number">
             </div>
             
             <div class="decision">
-                <h3>Decision</h3>
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="decision" class="inputsName">Decision</label>
+                <br>
                 <input type="text" id="decision" class="Decision" placeholder="Decision">
             </div>
 
             <div class="session_requirements">
-                <h3>Session Requirements</h3>
-                <textarea name="session_requirements" class="sessionrequirements" cols="30" rows="10"></textarea>
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="session_requirements" class="inputsName">Session Requirements</label>
+                <br>
+                <textarea name="session_requirements" id="session_requirements" class="sessionrequirements" cols="30" rows="10"></textarea>
             </div>
 
             <div class="session_reason">
-                <h3>Session Reason</h3>
-                <textarea name="session_reason" class="sessionreason" cols="30" rows="10"></textarea>
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="session_reason" class="inputsName">Session Reason</label>
+                <br>
+                <textarea name="session_reason" id="session_reason" class="sessionreason" cols="30" rows="10"></textarea>
             </div>
             
 
             <div class="session_buttons">
                 <form>
-                    <button class="save">Save </button>
+                    <button class="save"><i class="fa fa-save"></i> SAVE </button>
                     <br>
-                    <button class="back" id="back" formaction="addcase.html"> Back</button>
+                    <button class="back" id="back" formaction="addcase.html"><i class="fa fa-backward"></i> BACK</button>
                 </form>
             </div>
 
