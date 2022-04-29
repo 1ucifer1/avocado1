@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="legislations.css">
+    <link rel="stylesheet" href="models.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
 
     
 </head>
@@ -27,16 +33,18 @@
     </div>
     <!-- -->
     <div class="menu">
+        <a href="#"><i class="fa-solid fa-bars">
+        </i> </a>
         <br>
         <br>
         <br>
-        <br>
+        <a href="addcase.html"><i class="fa-solid fa-file-circle-check"></i></a>
         <br>
         <a href="agenda.html"><i class="fa-solid fa-calendar"></i></a>
         <br>
         <a href="legislations.html"><i class="fa-solid fa-building-columns"></i></a>
         <br>
-        <a href="models.html"><i class="fa-solid fa-file-circle-check"></i></a>
+        <a href="models.html"><i class="fa-solid fa-file-contract"></i></a>
         <br>
         <a href="caselist.html"><i class="fa-solid fa-box-archive"></i></a>
         <br>
@@ -54,11 +62,11 @@
             <div class="header2content">
 
                 <div class="child header2Image">
-                    <i class="fa-solid fa-building-columns"></i>
+                    <i class="fa-solid fa-newspaper"></i>
                 </div>
 
                 <div class="child header2Text">
-                    legislations
+                    LEGISLATIONS
                 </div>
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass" ></i>
@@ -103,7 +111,7 @@
             <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                 <tr>
-                <th>Legislations Name</th>
+                <th>Legislation Name</th>
                 <th><span class="actions">Action</span></th>
                 </tr>
                 </thead>
@@ -113,8 +121,8 @@
                 <td>
                     <div class="buttons">
     
-                        <button type="button" class="view">view</button>
-                        <button type="button" class="edit" onclick="add()" >edit</button>
+                        <button type="button" class="view">VIEW</button>
+                        <button type="button" class="edit" onclick="add()" >EDIT</button>
                         <script>
                             function add(){
                                 var hidden = document.getElementById("parent")
@@ -165,14 +173,14 @@
                 <br><br><br><br>
 		        <input type="text" id="lawyer" name="lawyer"placeholder="LAWYER NAME">
                 <hr>
-		        <br><br>
+                <br>
 		        <input type="text" id="name" name="name"placeholder="NAME OF legislations">
                 <hr>
-                <br><br>
+                <br>
                 <input type = "file" name = "upload" accept = "image/*" />
                 <br><br><br>
-            <button type="button" class="send" onclick="">save</button>
-            <button type="button" class="back" onclick="back()"> back </button>
+            <button type="button" class="send" onclick="">SAVE</button>
+            <button type="button" class="back" onclick="back()"> BACK </button>
             <script>
                 function back(){
                     var hidden = document.getElementById("parent")

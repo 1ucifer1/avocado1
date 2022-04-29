@@ -250,7 +250,7 @@ button:hover{
 }
 .add{    
     position: relative;
-    top: -2%;
+    top: -16%;
     left: 26%;
 }
 input{
@@ -292,6 +292,7 @@ hr{
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    height: 55px;
     width: 30%;
     opacity: 90%;
     left: -30px;
