@@ -102,29 +102,7 @@ hr{
     height: 70px;
     padding: 0;
 }
-ul{overflow-x: hidden;
-    overflow-y: scroll;
-    height: 480px;
-}
-.list{
-    background-color:#F4F4F4; 
-    position:absolute;
-    top: 85px;
-    width: 1436px;
-    height: 525px;
-    padding: 0;
-}
-li{ list-style-type: none;
-    background-color:#C4C4C4;
-    width: 96%;
-    height: 95px;
-    margin-bottom: 22px;
-    margin-left: -5px;
-    padding-left: 30px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-radius: 21px;
-}
+
 .button_add{
     background-color: #5E5C5C;
     position:absolute;
@@ -289,7 +267,7 @@ hr{
     position: absolute;
     left: 311px;
     top: 0px;
-    background-color:#f6f6f6;
+    background-color:#F4F4F4;
     height: 46px;
     padding-top: 24px;
     padding-left: 16px;
@@ -303,20 +281,7 @@ hr{
     width: 38px;
     margin: 16px;
 }
-.lname{
-    text-overflow: ellipsis;
-    
-}
-.Lname{
-    position: relative;
-    font-size: xx-large;
-    top: 24px;
-    left: 10px;
-    margin: 0%;
-    padding: 0%;
-    max-width: 61%;
-    
-}
+
 .header2Text{
     color: #D8C690;
     font-family: 'Courier New', Courier, monospace;
@@ -386,48 +351,6 @@ table{
     text-align: center;
     border-collapse: collapse;
 }
-
-/*
-.case_number{
-    position: absolute;
-    top: -11px;
-    left: 5px;
-    max-width: 400px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+tbody a{
+    color: #363636;
 }
-.client_name{
-    position: absolute;
-    top: -11px;
-    left: 464px;
-    max-width:  400px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.case_name{
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    margin: 5px;
-    max-width:  400px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: #363636;
-}
-.case_status{
-    position: absolute;
-    top: 20px;
-    left: 460px;
-    margin: 5px;
-    max-width:  400px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    border: #D8C690;
-
-}
-*/

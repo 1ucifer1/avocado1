@@ -15,8 +15,7 @@ body{
 }
 .menu {
     position: absolute;
-    width: 50px; /* Set a width if you like */
-    /*background-color: #313131;*/
+    width: 50px;
     background: rgb(32, 32, 32);
     top: 0;
     left:0px
@@ -73,12 +72,6 @@ body{
     letter-spacing: 5px;
     word-spacing: 15px;
 }
-/*
-.menu a.active {
-    background-color: #313131; 
-    color: #D8C690;
-}
-*/
 
 hr{
     background-color: #D8C690;
@@ -106,29 +99,7 @@ hr{
     height: 70px;
     padding: 0;
 }
-ul{overflow-x: hidden;
-    overflow-y: scroll;
-    height: 480px;
-}
-.list{
-    background-color:#F4F4F4; 
-    position:absolute;
-    top: 85px;
-    width: 1436px;
-    height: 525px;
-    padding: 0;
-}
-li{ list-style-type: none;
-    background-color:#C4C4C4;
-    width: 96%;
-    height: 95px;
-    margin-bottom: 22px;
-    margin-left: -5px;
-    padding-left: 30px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-radius: 21px;
-}
+
 .button_add{
     background-color: #5E5C5C;
     position:absolute;
@@ -304,6 +275,7 @@ hr{
     width: 27px;
     margin-top: 22px;
     margin-left: -245px;
+    
 }
 
 .child{
@@ -333,7 +305,8 @@ hr{
     left: 20px;
     font-size: xx-large;
 }
-tr:hover {background-color: #E3E3E3;}
+tr:hover {background-color: #E3E3E3;
+}
 
 th,td{
     /*to get rid of the double border*/
@@ -368,4 +341,8 @@ table{
     height: 25%;
     text-align: center;
     border-collapse: collapse;
+}
+tbody a{
+    color: #363636;
+    text-decoration: none;
 }
