@@ -155,10 +155,10 @@ hr{
     box-sizing: border-box;
     position: relative;
     left: 0px;
-    top: 75px;
+    top: 79px;
     background-color: #D8C690;
     border: solid 0.5px;
-    border-color: #a9a9a9;
+    border-color: #D8C690;
     margin-top: -1%;
     opacity: 50%;
     width: 59%;
@@ -411,7 +411,7 @@ h3{
     top: 224px;
     left: 571px;
     width: 419px;
-    height: 360px;
+    height: 340px;
 }
 .label1{
     position: absolute;
@@ -430,7 +430,8 @@ h3{
 }
 .expense_tap input ,.payment_tap input{
     border: none;
-    color: black;
+    background-color: #5E5C5C;
+    color: #D8C690;
     position: relative;
     left: 85px;
     top: 81px;
@@ -439,14 +440,14 @@ h3{
 }
 .expense_tap input::placeholder ,.payment_tap input::placeholder,.add_tap input::placeholder{
     
-    color: black;
+    color: #D8C690;
     
 }
 
 .expense_tap button ,.payment_tap button{
     position: relative;
-    left: 75px;
-    bottom: -91px;
+    left: 51px;
+    bottom: -90px;
 }
 .expenses{
     position:absolute;
@@ -544,27 +545,34 @@ h3{
     box-sizing: border-box;
     border-radius: 5%;
     position: fixed;
-    top: 132px;
+    top: 174px;
     left: 571px;
     width: 419px;
-    height: 578px;
+    height: 526px;
     background-color: #5E5C5C;
 
 }
 .add_tap input{
     position: relative;
-    top: -25px;
+    top: 3px;
     left: 81px;
     border: none;
+    background-color: #5E5C5C;
+    color: #D8C690;
 }
 .add_tap button{
     position: relative;
-    top: -105px;
-    left: 57px;
+    top: -73px;
+    left: 54px;
 
 }
 .add_tap hr{
     position: relative;
-    top: -29px;
-    left: -1px;
+    top: 5px;
+    left: -4px;
+    background-color: #D8C690;
+    border: solid 0.5px;
+    border-color: #D8C690;
+    margin-top: -2%;
+    opacity: 50%;
 }
