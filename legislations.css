@@ -118,13 +118,13 @@ hr{
 .view{
     
     position: relative;
-    left: 155px;
+    left: 170px;
     top: 0px;
     width: 116px;
     height: 50px;
     background-color: #494949;
     border:none;
-    font-size: 20px;
+    font-size: 17px;
     color: #D8C690;
     padding: 10px;
     text-align: center;
@@ -143,7 +143,7 @@ hr{
     height: 50px;
     background-color: #494949;
     border:none;
-    font-size: 20px;
+    font-size: 17px;
     color: #D8C690;
     padding: 10px;
     text-align: center;
@@ -170,7 +170,7 @@ hr{
 }
 .add{    
     position: relative;
-    top: -16%;
+    top: -1%;
     left: 26%;
 }
 input{
@@ -203,7 +203,7 @@ hr{
     position: relative;
     background-color: #494949;
     border:none;
-    font-size: 28px;
+    font-size: 20px;
     color: #D8C690;
     padding: 10px;
     text-align: center;
@@ -294,10 +294,13 @@ th,td{
     border-collapse: collapse;
     padding: 5px;
     border-bottom: 1px solid #ddd;
+    font-family: "Quicksand", sans-serif;
 }
 th{
     background-color: #5E5C5C;
-    height: 70px;
+    color: #D8C690;
+    height: 60px;
+    font-size: 18px;
 
 }
 .actions{
@@ -325,4 +328,5 @@ table{
 }
 tbody a{
     color: #363636;
+    text-decoration: none;
 }

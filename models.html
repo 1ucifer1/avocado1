@@ -32,8 +32,8 @@
     </div>
     <!-- -->
     <div class="menu">
-        <a href="#"><i class="fa-solid fa-bars">
-        </i> </a>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -84,40 +84,17 @@
                 <td><a href="#">sec3.pdf</a></td>
                 <td>
                     <div class="buttons">
-    
                         <button type="button" class="view">VIEW</button>
                         <button type="button" class="edit" onclick="add()" >EDIT</button>
-                        <script>
-                            function add(){
-                                var hidden = document.getElementById("parent")
-                                var showen = document.getElementById("add_page")
-                                showen.style.display="block";
-                                hidden.style.opacity="30%";
-                                showen.style.opacity="100%";
-                            }
-                        </script>
-    
                         </div>
-                
                 </td>
                 </tr>
             
-    
             </tbody>
             </table>
         </div>
             <button type="button" class="button_add" onclick="add()"> + </button>
 
-                <script>
-                    function add(){
-                        var hidden = document.getElementById("parent")
-                        var showen = document.getElementById("add_page")
-                        showen.style.display="block";
-                        hidden.style.opacity="30%";
-						showen.style.opacity="100%";
-                    
-                    }
-                </script>
             
         </div>
         <div class="add_page" id="add_page">
@@ -130,18 +107,27 @@
                 <br><br><br><br>
             <button type="button" class="send" onclick="">SAVE</button>
             <button type="button" class="back" onclick="back()"> BACK </button>
-            <script>
-                function back(){
-                    var hidden = document.getElementById("parent")
-                    var showen = document.getElementById("add_page")
-                    showen.style.display="none";
-                    hidden.style.opacity="100%";
-                }
-            </script>
+        
             </form>
-
         </div>
-    </div>
     
+    <script>
+        function add(){
+            var hidden = document.getElementById("parent")
+            var showen = document.getElementById("add_page")
+            showen.style.display="block";
+            hidden.style.opacity="30%";
+            showen.style.opacity="100%";
+        
+        }
+    </script>
+    <script>
+        function back(){
+            var hidden = document.getElementById("parent")
+            var showen = document.getElementById("add_page")
+            showen.style.display="none";
+            hidden.style.opacity="100%";
+        }
+    </script>
 </body>
 </html>
