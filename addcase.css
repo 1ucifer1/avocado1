@@ -16,8 +16,7 @@ body{
 .menu {
     position: fixed;
     z-index: 2;
-    width: 50px; /* Set a width if you like */
-    /*background-color: #313131;*/
+    width: 50px;
     background: rgb(32, 32, 32);
     top: 0;
     left:0px
@@ -39,7 +38,6 @@ body{
 
 .menu a:hover {
 
-    /* Dark grey background on mouse-over */
     background-color: #696969 ;
 }
 
@@ -108,48 +106,6 @@ hr{
     height: 70px;
     padding: 0;
 }
-
-.view{
-    
-    position: relative;
-    left: 155px;
-    top: 0px;
-    width: 116px;
-    height: 50px;
-    background-color: #494949;
-    border:none;
-    font-size: 20px;
-    color: #D8C690;
-    padding: 10px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0%;
-    padding: 0%;
-}
-.edit{
-    position:relative;
-    left: 253px;
-    top: 0px;
-    width: 116px;
-    height: 50px;
-    background-color: #494949;
-    border:none;
-    font-size: 20px;
-    color: #D8C690;
-    padding: 10px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0%;
-    padding: 0%;
-}
-
-
 hr{
     
     box-sizing: border-box;
@@ -212,7 +168,6 @@ button{
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
-  
 }
 
 button:hover{
@@ -307,7 +262,7 @@ input{
 }
 
 .inputsText{
-    margin-top: 15px;
+    margin-top: 17px;
     height: 30px;
     width: 300px;
     padding-left: 10px;
@@ -458,6 +413,10 @@ h3{
     position:absolute;
     top: 180px;
     left: 470px;
+}
+.expenses input:hover ,.payment input:hover{
+    background-color: #cfcfcf;
+    cursor: pointer;
 }
 /**/
 /*third row*/
