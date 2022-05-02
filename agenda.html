@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="agenda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
 
     
 </head>
@@ -100,34 +103,39 @@
             </select>
             <br>
             <div class="buttons">
-            <button type="submit" name="SEARCH" value="search" class="search button">SEARCH</button>
-            <i class="icon fa fa-search"></i>
+            <button type="submit" name="SEARCH" value="search" class="search button"><i class="icon fa fa-search"></i> SEARCH</button>
+            
             
             <br>
-            <button type="reset" name="RESET" value="reset" class="reset button">RESET</button>
-            <i class="icon fa fa-refresh"></i>
-            <div class="iconBtn"></div>
-            <div class="iconBtn"></div>
+            <button type="reset" name="RESET" value="reset" class="reset button"><i class="icon fa fa-refresh"></i> RESET</button>
+            
+          
             </div>
             
         </form>
 
         <div class="searchResult">
-           <table>
+           <table class="table-sort">
                <thead>
                    <tr>
-                       <th scope="col">Appointment</th>
+                       <th scope="col">Court</th>
+                       <th scope="col">Circuit</th>
+                       <th scope="col">Client</th>
                        <th scope="col">Time</th>
                    </tr>
                </thead>
                <tbody>
                    <tr>
-                       <td>Meeting with Client</td>
+                       <td>Majles Al-Dawla</td>
+                       <td>Al Abbaseya</td>
+                       <td>Mohamed Foaad</td>
                        <td>9:00 am</td>
                    </tr>
                    <tr>
-                       <td>Court Session</td>
-                       <td>1:00 pm</td>
+                    <td>Al Osra</td>
+                    <td>Misr Al-Jadidah</td>
+                    <td>Ahmed Yasser</td>
+                    <td>1:00 am</td>
                    </tr>
                </tbody>
             </table>
@@ -135,4 +143,5 @@
 
     </div>
 </body>
+<script src="agendaTableSort.js"></script>
 </html>

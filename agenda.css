@@ -51,6 +51,7 @@ body{
 }
 .logo{ 
     position: relative;
+    top: 4px;
     left: 30px;
     width: 300px;
 
@@ -138,12 +139,10 @@ hr{
     color: #D8C690;
     font-family:"Quicksand", sans-serif;
     font-size: 25px;
-    font-weight: 00;
     width: 50px;
     margin-top: 20px;
     margin-left: -550px;
-    letter-spacing: 3px;
-    text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+  
 }
 
 .child{
@@ -157,7 +156,7 @@ hr{
 #calendar{
     position: absolute;
     top: 70px;
-    margin-left: 25px;
+    margin-left: 50px;
     height: 557px;
     width:450px;
 }
@@ -169,8 +168,8 @@ hr{
 }
 
 .inputs{
-    position: relative;
-    left: 42%;
+    position: absolute;
+    left: 574px;
     top: 140px;
 }
 
@@ -182,24 +181,28 @@ hr{
 .inputsSelect{
     margin-top: 15px;
     margin-bottom: 20px;
-    height: 30px;
-    width: 200px;
+    height: 35px;
+    width: 250px;
     font-family: "Quicksand", sans-serif;
+}
+
+.buttons{
+        position: absolute;
+        left: 52px; 
 }
 
 .button{
     height: 40px;
-    width: 200px;
+    width: 145px;
     margin:20px 0 0 0;
     box-sizing: border-box;
-    background-color: #494949;
-    border-radius: 0;
+    background-color: #363636;
+    border-radius: 2px;
     border:none;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
     color: #D8C690;
     padding: 0px;
-    padding-left: 30px;
     padding-bottom: 2px;
     text-align: center;
     transition-duration: 0.4s;
@@ -207,48 +210,29 @@ hr{
     overflow: hidden;
     cursor: pointer;
     opacity: 90%;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
-.button:after {
-    box-sizing: border-box;
-    content: "";
-    background: #868686;
-    display: block;
-    position: absolute;
-    padding-top: 40px;
-    padding-left: 190px;
-    margin-left: -11px ;
-    margin-top: -30px;
-    opacity: 0;
-    transition: all 0.8s
+button:active {
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-.button:active:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s  ;
-    -webkit-transition: 0s  ;
-    -moz-transition: 0s  ;
-    -ms-transition: 0s  ;
-    -o-transition: 0s  ;
-}
 
 .button:hover{ 
   background-color: #5e5e5e;  
-}
-
-.icon{
-    z-index: 1;
-    position: relative;
-    left: -193px;
-    top: 0px;
-    filter: invert(0.7) sepia(1);
 }
 
 .iconBtn{
@@ -262,11 +246,11 @@ hr{
 
 .searchResult{
     position: absolute;
-    left: 930px;
+    left: 900px;
     top: 90px;
     height: 517px;
-    width:450px;
-    background-color: #F4F4F4;
+    width:490px;
+    background-color: #efefef;
     text-align: center;
 }
 
@@ -288,6 +272,7 @@ tr{
 }
 
 td{
+    font-size: 15px;
     height: 60px;
 }
 
@@ -300,5 +285,5 @@ thead{
     color: #D8C690;
     height: 55px;
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
 }
