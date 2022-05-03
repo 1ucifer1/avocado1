@@ -115,8 +115,26 @@ hr{
     font-size: 45px;
     border-radius: 50%;
     border: 10px;
-    
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
+
+.button_add:hover{
+    background-color: #757575;
+}
+
+.button_add:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
 .view{
     position: relative;
     left: 0px;
@@ -438,7 +456,6 @@ table{
     text-align: center;
     border-collapse: collapse;
     font-family: 'Quicksand', sans-serif;   
-    
 }
 tbody a{
     color: #363636;
