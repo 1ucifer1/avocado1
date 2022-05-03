@@ -50,6 +50,7 @@ a{
 }
 .logo{ 
     position: relative;
+    top: 4px;
     left: 30px;
     width: 300px;
 
@@ -116,18 +117,33 @@ hr{
     color: #D8C690;
     font-size: 45px;
     border-radius: 50%;
-    border: 10px;
-    
+    border: 10px;    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.button_add:hover{
+    background-color: #757575;
+}
+
+.button_add:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 .view{
-    
     position: relative;
-    left: 27px;
+    left: 0px;
     top: 1px;
     width: 116px;
     height: 50px;
     background-color: #494949;
     border:none;
+    border-radius:2px ;
     font-size: 20px;
     color: #D8C690;
     padding: 10px;
@@ -138,15 +154,39 @@ hr{
     cursor: pointer;
     margin: 0%;
     padding: 0%;
+    -webkit-border-radius:2px ;
+    -moz-border-radius:2px ;
+    -ms-border-radius:2px ;
+    -o-border-radius:2px ;
 }
+
+.view:hover{
+    background-color: #5e5e5e;  
+}
+
+.view:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 .edit{
     position:relative;
-    left: 70px;
+    left: 8px;
     top: 1px;
     width: 116px;
     height: 50px;
     background-color: #494949;
     border:none;
+    border-radius: 2px;
     font-size: 20px;
     color: #D8C690;
     padding: 10px;
@@ -157,6 +197,29 @@ hr{
     cursor: pointer;
     margin: 0%;
     padding: 0%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+
+.edit:hover{
+    background-color: #5e5e5e;  
+}
+
+.edit:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .add_page{
     display:none;
@@ -253,28 +316,36 @@ hr{
 }
 .caselist{
     position: absolute;
-    left: 109px;
+    left: 108px;
     top: 0px;
     background-color: #5E5C5C;
-    height: 46px;
+    height: 56px;
     width: 170px;
-    padding-top: 24px;
+    padding-top: 14px;
     padding-left: 16px;
     padding-right: 16px;
+    text-align: center;
 }
 .courtlist{
-    
     position: absolute;
-    left: 311px;
+    left: 308px;
     top: 0px;
-    background-color:#F4F4F4;
-    height: 46px;
-    padding-top: 24px;
+    background-color: #F4F4F4;
+    height: 56px;
+    width: 170px;
+    padding-top: 14px;
     padding-left: 16px;
     padding-right: 16px;
+    text-align: center;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
+
 .caselist:hover{
-    background-color:#dadada ;
+    background-color:#757575 ;
 }
 
 #header2image{
@@ -284,8 +355,8 @@ hr{
 
 .header2Text{
     color: #D8C690;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-family: 'Saira Extra Condensed', sans-serif;   
+    font-size: 30px;
     font-weight: 500;
     width: 27px;
     margin-top: 22px;
@@ -308,6 +379,9 @@ hr{
     background-color: #F4F4F4;
     border: 1px solid grey;
     border-radius: 5px;
+    outline: none;
+    color: black;
+    padding-left: 10px;
 }
 .fa-magnifying-glass{
     width: 40px;
@@ -319,6 +393,15 @@ hr{
     left: 20px;
     font-size: xx-large;
 }
+
+tr{
+    transition: 0.2s;
+    -webkit-transform: 0.2s;
+    -moz-transform: 0.2s;
+    -ms-transform: 0.2s;
+    -o-transform: 0.2s;
+}
+
 tr:hover {background-color: #E3E3E3;}
 
 th,td{
@@ -330,7 +413,10 @@ th,td{
 th{
     background-color: #5E5C5C;
     height: 70px;
-
+    font-family: 'Saira Extra Condensed', sans-serif;   
+    font-size: 25px;
+    color: #D8C690;
+    letter-spacing: 2px;
 }
 .table-responsive{
     overflow-y: scroll ;
@@ -350,6 +436,7 @@ table{
     height: 25%;
     text-align: center;
     border-collapse: collapse;
+    font-family: 'Quicksand', sans-serif;   
 }
 tbody a{
     color: #363636;
