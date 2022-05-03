@@ -37,7 +37,6 @@ body{
 
 .menu a:hover {
 
-    /* Dark grey background on mouse-over */
     background-color: #696969 ;
 }
 .header{
@@ -47,6 +46,7 @@ body{
 }
 .logo{ 
     position: relative;
+    top: 4px;
     left: 30px;
     width: 300px;
 
@@ -115,18 +115,34 @@ hr{
     border-radius: 50%;
     border: 10px;
     cursor: pointer;
-    
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.button_add:hover{
+    background-color: #858585;  
+}
+
+.button_add:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 .view{
-    
     position: relative;
-    left: 155px;
+    left: 170px;
     top: 0px;
     width: 116px;
     height: 50px;
     background-color: #494949;
     border:none;
-    font-size: 20px;
+    font-size: 17px;
     color: #D8C690;
     padding: 10px;
     text-align: center;
@@ -136,16 +152,40 @@ hr{
     cursor: pointer;
     margin: 0%;
     padding: 0%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
+
+.view:hover{
+    background-color: #5e5e5e;  
+}
+
+.view:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 .edit{
     position:relative;
-    left: 253px;
+    left: 220px;
     top: 0px;
     width: 116px;
     height: 50px;
     background-color: #494949;
     border:none;
-    font-size: 20px;
+    font-size: 17px;
     color: #D8C690;
     padding: 10px;
     text-align: center;
@@ -155,6 +195,29 @@ hr{
     cursor: pointer;
     margin: 0%;
     padding: 0%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.edit:hover{
+    background-color: #5e5e5e;  
+}
+
+.edit:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .add_page{
     display:none;
@@ -167,13 +230,13 @@ hr{
     box-sizing: border-box;
     background-color: #5E5C5C;
     width: 529px;
-    height: 592px;
+    height: 415px;
     border-radius: 10%;
 }
 
 .add{    
     position: relative;
-    top: -2%;
+    top: -1%;
     left: 26%;
 }
 input{
@@ -206,7 +269,7 @@ hr{
     position: relative;
     background-color: #494949;
     border:none;
-    font-size: 28px;
+    font-size: 20px;
     color: #D8C690;
     padding: 10px;
     text-align: center;
@@ -218,7 +281,6 @@ hr{
     opacity: 90%;
     left: -30px;
     bottom: 15px;
-    top: -53px;
 }
 ::placeholder{
     box-sizing: border-box;
@@ -269,13 +331,12 @@ hr{
 }
 .header2Text{
     color: #D8C690;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
     font-weight: 500;
     width: 27px;
-    margin-top: 22px;
+    margin-top: 13px;
     margin-left: -245px;
-    
 }
 
 .child{
@@ -292,6 +353,9 @@ hr{
 } 
 .search_bar{
     background-color: #F4F4F4;
+    color: black;
+    outline: none;
+    padding-left: 10px;
     border: 1px solid grey;
     border-radius: 5px;
 }
@@ -301,11 +365,18 @@ hr{
 }
 .header2Image{
     position: relative;
-    top: 14px;
+    top: 18px;
     left: 20px;
     font-size: xx-large;
 }
-tr:hover {background-color: #E3E3E3;
+tr:hover {background-color: #E3E3E3;}
+
+tr{
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
 }
 
 th,td{
@@ -313,10 +384,13 @@ th,td{
     border-collapse: collapse;
     padding: 5px;
     border-bottom: 1px solid #ddd;
+    font-family: "Quicksand", sans-serif;
 }
 th{
-    background-color: #5E5C5C;
-    height: 70px;
+    background-color: #5E5C5C;  
+    color: #D8C690;
+    height: 50px;
+    font-size: 18px;
 
 }
 .actions{
