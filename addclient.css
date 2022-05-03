@@ -120,6 +120,35 @@ hr{
     width: 59%;
 }
 
+.save,.reset{
+    margin:20px 0 0 0;
+    box-sizing: border-box;
+    background-color: #494949;
+    border-radius: 1px;
+    border:none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: #D8C690;
+    padding: 0px;
+    margin-right: 17px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 95%;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.reset,.save{
+    height: 40px;
+    width: 150px;
+}
+
+
 .buttons{
     position: absolute;
     left: 920px;
@@ -308,6 +337,16 @@ input{
     position:absolute;
     top: 180px;
     left: 920px;
+}
+
+.individual_company{
+    position: absolute;
+    display:inline-flex;
+    top: 370px;
+    left: 32px;
+    width: 317px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 
 /**/
