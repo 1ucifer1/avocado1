@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="expertsession.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
 
-    
+ 
 </head>
 
 <body>
@@ -49,6 +54,7 @@
         <br>
         <br>
     </div>
+
     <div class="parent" id="parent">
         <div class="header2">
             <div class="header2content">
@@ -56,6 +62,7 @@
                     
                 </div>
                 <div class="child header2Text">
+                    <i class="fa fa-people-line"></i>
                     Expert Session
                 </div>
                 
@@ -67,40 +74,52 @@
             
             
             <div class="office_addressDIV">
-                <h3>Office Address</h3>
+                <i class="fa-solid fa-building iconFilter"></i>
+                <label for="office_address" class="inputsName">Office Address</label>
+                <br>
                 <input type="text" id="office_address" class="office_address"  placeholder="Next Date" >
             </div>
 
             <div class="expert_session_dateDIV">
-                <h3>Expert Session Date</h3>
+                <i class="fa-solid fa-calendar iconFilter"></i>
+                <label for="expert_session_date" class="inputsName">Expert Session Date</label>
+                <br>
                 <input type="date" id="expert_session_date" class="expert_session_date"  placeholder="Expert Session Date">
             </div>
 
             <div class="session_attachmentsDIV">
-                <h3>Session Attachments</h3>
+                <i class="fa-solid fa-paperclip iconFilter"></i>
+                <label for="session_Attachments" class="inputsName">Session Attachments</label>
+                <br>
                 <input type = "file" id="session_Attachments" class="session_attachments" placeholder="Session_attachments" accept = "image/*" multiple="multiple" />
             </div>
             
             <div class="expert_nameDIV">
-                <h3>Expert Name</h3>
+                <i class="fa-solid fa-user-doctor iconFilter"></i>
+                <label for="expert_name" class="inputsName">Expert Name</label>
+                <br>
                 <input type="text" id="expert_name" class="expert_name" placeholder="Expert Name">
             </div>
             
             <div class="decisionDIV">
-                <h3>Decision</h3>
+                <i class="fa-solid fa-signature iconFilter"></i>
+                <label for="decision" class="inputsName">Decision</label>
+                <br>
                 <input type="text" id="decision" class="decision" placeholder="Decision">
             </div>
 
             <div class="session_requirementsDIV">
-                <h3>Session Requirements</h3>
+                <i class="fa-solid fa-note-sticky iconFilter"></i>
+                <label for="session_requirements" class="inputsName">Session Requirements</label>
+                <br>
                 <textarea name="session_requirements" class="session_requirements" cols="30" rows="10"></textarea>
             </div>
             
 
             <div class="session_buttons">
-                <button class="save">Save </button>
+                <button class="save"><i class="fa fa-save"></i> SAVE</button>
                 <br>
-                <button class="back" id="back" formaction="addcase.html"> Back</button>
+                <button class="back" id="back" formaction="addcase.html"><i class="fa fa-backward"></i> BACK</button>
             </div>
 
         </form>
