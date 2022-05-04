@@ -96,7 +96,7 @@ hr{
     top: 85px;
     left: 65px;
     width: 1436px;
-    height: 627px;
+    height: 605px;
     padding: 0;
     overflow: scroll;
     overflow-x:hidden;
@@ -215,7 +215,7 @@ hr{
     flex-direction: row;
 }
 
-.button{
+.button,.reset{
     height: 40px;
     width: 145px;
     margin:20px 0 0 0;
@@ -240,7 +240,7 @@ hr{
     -o-border-radius: 1px;
 }
 
-.button:active{
+.button:active ,.reset:active{
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
@@ -254,7 +254,7 @@ hr{
     -o-border-radius: 5px;
 }
 
-.button:hover{ 
+.button:hover,.reset:hover{ 
 background-color: #5e5e5e;  
 }
 
@@ -265,17 +265,6 @@ background-color: #5e5e5e;
     top: 32px;
     filter: invert(0.7) sepia(1);
     -webkit-filter: invert(0.7) sepia(1);
-}
-
-.iconBtn{
-    position: relative;
-    background-color: #363636;
-    height: 40px;
-    width: 40px;
-    top: 20px;
-    left:-432px;
-    margin-bottom: 20px;
-    margin-right: 176px;
 }
 
 
@@ -301,19 +290,27 @@ input{
     left: 450px;
 }
 
-.verificationImage{
+.verificationbutton{
     position: absolute;
     color: #D8C690;
     background-color: #363636;    
     height: 27.5px;
     width: 80px;
+    height: 36px;
     left: 235px;
-    top: 36px;
+    top: 35px;
     text-align: center;
     align-content: center;
     font-family: "Quicksand", sans-serif;
     font-size: 15px;
     padding-top: 7px;
+}
+.reset i{
+position: relative;
+left: -3%;
+top: 0%;
+opacity: 100%;
+color: #4e3b03;
 }
 
 .dateOfBirth{

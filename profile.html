@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
 
     
 </head>
@@ -32,8 +29,8 @@
     </div>
     <!-- -->
     <div class="menu">
-        <a href="#"><i class="fa-solid fa-bars">
-        </i> </a>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -52,7 +49,6 @@
         <br>
         <br>
         <br>
-        <br>
     </div>
     <div class="parent">
         <div class="header2">
@@ -60,7 +56,6 @@
 
                 <div class="child header2Image">
                     <i class="fa-solid fa-user-edit fa"></i>
-                    <!-- <img id="header2image" alt="Time Tracker Logo" src="img/calendar.svg" > -->
                 </div>
 
                 <div class="child header2Text">
@@ -128,7 +123,7 @@
                 <label for="verification" class="inputsName">Verification</label>
                 <br>
                 <input placeholder="Not Verified" readonly type="text" name="verification" class="inputsSelect" id="verification">
-                <div class="verificationImage">Verify</div>
+                <button class="verificationbutton">Verify</button>
                 <br>
             </div>
 
@@ -136,26 +131,17 @@
                 <i class="fa-solid fa-calendar-check iconFilter"></i>
                 <label for="dateOfBirth" class="inputsName">Date of Birth</label>
                 <br>
-                <input type="date" id="dateOfBirth" class="inputsSelect" id="date">
+                <input type="date" id="dateOfBirth" class="inputsSelect" >
                 <br>
             </div>
 
             <div class="buttons">
             <button type="button" name="SAVE" value="save" class="save button"><i class="fa fa-save"></i> SAVE</button>
             
-            <button class="button click" id="back" formaction="addcase.html"><i class="fa fa-backward"></i> BACK</button>
+            <button type="reset" name="RESET" value="reset" class="reset button"><i class="icon fa fa-refresh"></i> RESET</button>
             </div>
             
         </form>
-        <!--
-        <div class="lawyerOrAdmin">
-            <label class="adminLabel" for="admin"> <i class="fa-solid fa-user-shield" for="admin"></i> Admin</label>
-            <input type="radio" name="lawyerAdmin" class="radioBtn admin" id="admin" value="Admin">
-            
-            <label class="lawyerLabel" for="lawyer"> <i class="fa-solid fa-user-tie" for="lawyer"></i> Lawyer</label>
-            <input type="radio" name="lawyerAdmin" class="radioBtn lawyer" id="lawyer" value="Lawyer">
-        </div>
-        -->
 
         <div class="lawyersList">
             <table class="lawyersListTable table-sort" id="lawyersListTable">

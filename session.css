@@ -13,7 +13,7 @@ body{
     color: #D8C690;
 }
 .menu {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 50px;
     background: rgb(32, 32, 32);
@@ -52,12 +52,12 @@ body{
     
 }
 .container{
-    position:fixed;
+    position:absolute;
     z-index:3 ;
     background-image:linear-gradient(to right,rgb(32, 32, 32),#363636);
     top: 0;
     left: 40px;
-    width: 100%;
+    width: 95%;
     height: 70px;
     padding: 0;
     display: flex;
@@ -81,7 +81,7 @@ hr{
 .parent{
     background-color: #F4F4F4; 
     position:absolute;
-    top: 85px;
+    top: 80px;
     left: 65px;
     width: 1436px;
     height: 627px;
@@ -99,45 +99,6 @@ hr{
     padding: 0;
 }
 
-.view{
-    
-    position: relative;
-    left: 155px;
-    top: 0px;
-    width: 116px;
-    height: 50px;
-    background-color: #494949;
-    border:none;
-    font-size: 20px;
-    color: #D8C690;
-    padding: 10px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0%;
-    padding: 0%;
-}
-.edit{
-    position:relative;
-    left: 253px;
-    top: 0px;
-    width: 116px;
-    height: 50px;
-    background-color: #494949;
-    border:none;
-    font-size: 20px;
-    color: #D8C690;
-    padding: 10px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0%;
-    padding: 0%;
-}
 
 input{
     color: #D8C690;
@@ -297,7 +258,6 @@ label{
     font-family: "Quicksand", sans-serif;
 }
 
-/*first row*/
 .session_date{
     position:absolute;
     top: 0px;

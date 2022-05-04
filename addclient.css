@@ -14,7 +14,7 @@ body{
     color: #D8C690;
 }
 .menu {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 50px;
     background: rgb(32, 32, 32);
@@ -56,16 +56,15 @@ body{
     top: 4px;
     left: 30px;
     width: 300px;
-
     
 }
 .container{
-    position:fixed;
+    position:absolute;
     z-index: 3;
     background-image:linear-gradient(to right,rgb(32, 32, 32),#363636);
     top: 0;
     left: 40px;
-    width: 100%;
+    width: 97.4%;
     height: 70px;
     padding: 0;
     display: flex;
@@ -92,7 +91,7 @@ hr{
     top: 85px;
     left: 65px;
     width: 1436px;
-    height: 667px;
+    height: 622px;
     padding: 0;
     
 
@@ -120,7 +119,7 @@ hr{
     width: 59%;
 }
 
-.save,.reset{
+.save,.back{
     margin:20px 0 0 0;
     box-sizing: border-box;
     background-color: #494949;
@@ -143,7 +142,7 @@ hr{
     -o-border-radius: 1px;
 }
 
-.reset,.save{
+.back,.save{
     height: 40px;
     width: 150px;
 }
@@ -246,7 +245,7 @@ button:active{
     top: 110px;
     left: 33px;
     width: 1393px;
-    height: 557px;
+    height: 464px;
     padding-left: 10px;
 }
 

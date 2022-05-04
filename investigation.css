@@ -17,19 +17,19 @@ body{
 
 .menu {
     position: absolute;
-    width: 50px; /* Set a width if you like */
-    /*background-color: #313131;*/
+    z-index: 2;
+    width: 50px;
     background: rgb(32, 32, 32);
     top: 0;
     left:0px
 }
 
 .menu a {
-    /*Greybackgroundcolor*/color: #D8C690;
-    /*whitetextcolor*/display: block;
-    /*Makethelinksappearbeloweachother*/padding: 12px;
-    /*Addsomepadding*/text-decoration: none;
-    /*Removeunderlinefromlinks*/line-height: 2;
+    color: #D8C690;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    line-height: 2;
     font-size: x-large;
     transition:0.5s ;
     -webkit-transition:0.5s ;
@@ -40,7 +40,6 @@ body{
 
 .menu a:hover {
 
-    /* Dark grey background on mouse-over */
     background-color: #696969 ;
 }
 .header{
@@ -61,7 +60,7 @@ body{
     background-image:linear-gradient(to right,rgb(32, 32, 32),#363636);
     top: 0;
     left: 40px;
-    width: 100%;
+    width: 97.4%;
     height: 70px;
     padding: 0;
     display: flex;
@@ -70,9 +69,6 @@ body{
 }
 .links{
     position: relative;
-    /*
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    */
     font-family: "Quicksand", sans-serif;
     padding-right: 60px;
     font-size: 16px;
@@ -95,7 +91,7 @@ hr{
 .parent{
     background-color: #F4F4F4; 
     position:absolute;
-    top: 85px;
+    top: 80px;
     left: 65px;
     width: 1436px;
     height: 627px;

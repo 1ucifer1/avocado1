@@ -57,7 +57,7 @@ body{
     background-image:linear-gradient(to right,rgb(32, 32, 32),#363636);
     top: 0;
     left: 40px;
-    width: 100%;
+    width: 97.4%;
     height: 70px;
     padding: 0;
     display: flex;
@@ -85,7 +85,7 @@ hr{
     top: 85px;
     left: 65px;
     width: 1436px;
-    height: 627px;
+    height: 622px;
     padding: 0;
     
 
@@ -264,24 +264,7 @@ hr{
     opacity: 50%;
     width: 47%;
 }
-.send,.back{
-    box-sizing: border-box;
-    position: relative;
-    background-color: #494949;
-    border:none;
-    font-size: 20px;
-    color: #D8C690;
-    padding: 10px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    width: 30%;
-    opacity: 90%;
-    left: -30px;
-    bottom: 15px;
-}
+
 ::placeholder{
     box-sizing: border-box;
     color: #D8C690;

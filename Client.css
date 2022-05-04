@@ -17,19 +17,18 @@ body{
 
 .menu {
     position: absolute;
-    width: 50px; /* Set a width if you like */
-    /*background-color: #313131;*/
+    width: 50px; 
     background: rgb(32, 32, 32);
     top: 0;
     left:0px
 }
 
 .menu a {
-    /*Greybackgroundcolor*/color: #D8C690;
-    /*whitetextcolor*/display: block;
-    /*Makethelinksappearbeloweachother*/padding: 12px;
-    /*Addsomepadding*/text-decoration: none;
-    /*Removeunderlinefromlinks*/line-height: 2;
+    color: #D8C690;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    line-height: 2;
     font-size: x-large;
     transition:0.5s ;
     -webkit-transition:0.5s ;
@@ -40,7 +39,6 @@ body{
 
 .menu a:hover {
 
-    /* Dark grey background on mouse-over */
     background-color: #696969 ;
 }
 .header{

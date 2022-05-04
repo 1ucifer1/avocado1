@@ -1,4 +1,3 @@
-
 body{
     background-color: #cfcfcf;
     display:flex;
@@ -57,7 +56,7 @@ body{
     background-image:linear-gradient(to right,rgb(32, 32, 32),#363636);
     top: 0;
     left: 40px;
-    width: 100%;
+    width: 97.4%;
     height: 70px;
     padding: 0;
     display: flex;
@@ -85,7 +84,7 @@ hr{
     top: 85px;
     left: 65px;
     width: 1436px;
-    height: 627px;
+    height: 622px;
     padding: 0;
     
 
