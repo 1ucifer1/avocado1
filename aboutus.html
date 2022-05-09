@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7fa73fa1c.js" crossorigin="anonymous"></script>
+    <title>Session</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    
+</head> 
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="img/LogoName.png" >
+            <div class="links">
+                <a href="#">About us</a>
+                <span class="h">  |  </span>
+                <a href="#">Contact us</a>
+                <span class="h">  |  </span>
+                <a title="profile" onclick="show_toast()" class="prof"><i class="fa-solid fa-user-tie"></i></a>
+                <div class="login_toast" id="login_toast" style="display:none">
+
+                    <a href="profile.html" class="a1"> Profile</a>
+                    
+                    <a href="index.html" class="a2">Logout</a>
+                    
+                    <a onclick="hide_toast()" class="a3">Back</a>
+                    <script>
+                        function show_toast(){
+                            var toast = document.getElementById("login_toast");
+                            toast.style.display="block";
+                        }
+
+                        function hide_toast(){
+                            var toast = document.getElementById("login_toast");
+                            toast.style.display="none";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="agenda.html" title="agenda"><i class="fa-solid fa-calendar"></i></a>
+        <br>
+        <a href="legislations.html" title="legislations"><i class="fa-solid fa-newspaper"></i></a>
+        <br>
+        <a href="models.html" title="models"><i class="fa-solid fa-file-contract"></i></a>
+        <br>
+        <a href="caselist.html" title="case list"><i class="fa-solid fa-box-archive"></i></a>
+        <br>
+        <a href="clientlist.html" title="client list"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="parent" id="parent">
+        <div class="header2">
+            <div class="header2content">
+                <div class="child header2Image">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                </div>
+                <div class="child header2Text">
+                    About Us
+                </div>
+                
+            </div>
+        </div>
+        
+        <form class="inputs" id="inputs" action="">
+            <h1>the team</h1>
+            <span>
+            <h1 class="dev_title">The Developers </h1>
+                <br><br>
+            <span class="names">
+                <h4>Omar Shawky <br><br> <img class="shawky" src="team photos/shawky.jpeg" ></h4> 
+                <h4>Malak Habib  <br><br> <img class="malak" src="team photos/malak.jpeg" ></h4>  
+                <h4>Mohamed Amr <br><br> <img class="amr" src="team photos/mohamed amr.jpeg" ></h4> 
+                <h4>Abdelrahman  Attia <br><br> <img class="attia" src="team photos/abd elrahman.jpeg" ></h4> 
+                <h4>Ezz-eldeen Khairy<br><br> <img class="ezz" src="team photos/ezz .jpeg" ></h4> 
+                <h4>Mohamed Abdelghany <br><br> <img class="ab8any" src="team photos/abd elghany.jpeg" ></h4> 
+                <h4>Mostafa said <br><br> <img class="mostafa" src="team photos/mostafa.jpeg" ></h4>
+                <h4>Omar Sheriff <br><br> <img class="sherif" src="team photos/sheriff.jpeg" ></h4> 
+            </span>
+        </span>
+            <span class="about">
+                <h1>Our Mission </h1>
+                <h4>the Law Office Management Information System purpose is to digitize  the legal firm’s everyday operations , such as storing records ,<br><br> and managing client records, attorney records, service records, payment records, and other firm-related activities , and after that <br> <br>the lawyer can check on his activities(case list,court record list ,legislations,models,...) using the mobile application.</h4>
+            </span>
+             
+        </form>
+    </div>
+</body>
+</html>
