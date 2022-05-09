@@ -19,16 +19,36 @@
         <div class="container">
             <img class="logo" src="img/LogoName.png" >
             <div class="links">
-                <a href="#">Help</a>
-                <span class="h">  |  </span>
                 <a href="#">About us</a>
                 <span class="h">  |  </span>
                 <a href="#">Contact us</a>
+                <span class="h"> | </span>
+                <a title="profile" onclick="show_toast()" class="prof"><i class="fa-solid fa-user-tie"></i></a>
+                <div class="login_toast" id="login_toast" style="display:none">
+
+                    <a href="profile.html" class="a1"> Profile</a>
+                    
+                    <a href="index.html" class="a2">Logout</a>
+                    
+                    <a onclick="hide_toast()" class="a3">Back</a>
+                    <script>
+                        function show_toast(){
+                            var toast = document.getElementById("login_toast");
+                            toast.style.display="block";
+                        }
+
+                        function hide_toast(){
+                            var toast = document.getElementById("login_toast");
+                            toast.style.display="none";
+                        }
+                    </script>
+                </div>
             </div>
         </div>
     </div>
     <!-- -->
     <div class="menu">
+        <br>
         <br>
         <br>
         <br>
@@ -42,9 +62,11 @@
         <br>
         <a href="caselist.html" title="case list"><i class="fa-solid fa-box-archive"></i></a>
         <br>
-        <a href="profile.html" title="profile"><i class="fa-solid fa-user-tie"></i></a>
-        <br>
         <a href="clientlist.html" title="client list"><i class="fa-solid fa-user-group"></i></a>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -79,11 +101,11 @@
                 <br>
                 <input type="text" id="case_type" class="inputsText">
             </div>
-            <div class="contender_attachments">
+            <div class="all_attachments">
                 <i class="fa-solid fa-paperclip iconFilter"></i>
-                <label for="contender_attachments" class="inputsName">Contender Attachments</label>
+                <label for="all_attachments" class="inputsName">All Attachments</label>
                 <br>
-                <input type = "file" id="contender_attachments" class="inputsText" name = "upload" accept = "image/*" multiple="multiple">
+                <input type = "file" id="all_attachments" class="inputsText" name = "upload" accept = "image/*" multiple="multiple">
 
             </div>
             <div class="court">
@@ -158,12 +180,7 @@
                 
                 <button class="go_investigation" id="go_investigation" formaction="investigation.html"><i class="fa fa-user-secret "></i> Investigation</button>
             </div>
-            <div class="client_attachments">
-                <i class="fa-solid fa-paperclip iconFilter"></i>
-                <label for="client_attachments" class="inputsName">Client Attachments</label>
-                <br>
-                <input type = "file" id="client_attachments"  class="inputsText" name = "upload" accept = "image/*" multiple="multiple">
-            </div>
+           
             <div class="content">
                 <i class="fa-solid fa-note-sticky iconFilter"></i>
                 <label for="content" class="inputsName">Content</label>
@@ -183,11 +200,11 @@
             <div class="buttons">
             <button type="button" class="send" onclick=""><i class="fa fa-save"></i> SAVE</button>
             <br>
-            <button type="button" class="back"  onclick="window.location.href='http://127.0.0.1:5500/caselist.html'"> <i class="fa fa-backward"></i> BACK </button>
+            <button type="button" class="back"  onclick="window.location.href='caselist.html'"> <i class="fa fa-backward"></i> BACK </button>
             </div>
         </div>
                     <!-- the expense tap-->
-                    <div class="expense_tap" id="expense_tap" style="display:none;" action="">
+                    <div class="expense_tap" id="expense_tap" style="display:none;" >
                         <div class="searchResult">
                             <table class="table-sort">
                                 <thead>
@@ -197,7 +214,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <!--   <tr>
                                         <td>500</td>
                                         <td>papers</td>
                                         
@@ -215,33 +232,18 @@
                                        <tr>
                                         <td>25</td>
                                         <td>transportations</td>
-                                        
                                        </tr>
-                                       <tr>
-                                        <td>25</td>
-                                        <td>transportations</td>
-                                        
-                                       </tr>
-                                       <tr>
-                                        <td>25</td>
-                                        <td>transportations</td>
-                                        
-                                       </tr>
-                                       <tr>
-                                        <td>56598</td>
-                                        <td>transportations</td>
-                                        
-                                       </tr>
+                                       -->
                                 </tbody>
                              </table>
                          </div>
-                    <form action="">
+                    <form class="okokoko">
                         <input type="text" id="expense" class="expense"  placeholder="Expense">
                         <hr class="hr1"><br>
                         <input type="text" id="expense_name" class="expense_name" placeholder="Expense Name">
                         <hr class="hr1"><br>
                         <button class="save">Save </button>
-                        <button class="back" id="back" onclick="expense_hide()"> Back</button>
+                        <button  class="back"  onclick="expense_hide()"> Back</button>
                     </form>
                     </div>
                     
@@ -258,7 +260,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                                 <tr>
                                 <td>500</td>
                                 <td>papers</td>
                                 

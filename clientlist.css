@@ -403,3 +403,46 @@ tbody a{
     color: #363636;
     text-decoration: none;
 }
+
+.login_toast{
+    background-image: linear-gradient(to right,rgb(32, 32, 32),#363636);
+    border-radius: 7%;
+    position: absolute;
+    z-index: 1;
+    top: 108%;
+    left: 56%;
+    width: 125px;
+    height: 68px;
+    font-size:small ;   
+}
+.prof{cursor: pointer;}
+.a1,.a2,.a3{
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    color: rgb(40, 40, 40);
+}
+
+.a1{
+    top: 3%;
+    padding-right: 33%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.a1:hover , .a2:hover,.a3:hover{
+    background-color:#999898 ;
+}
+.a2{
+    top: 9%;
+    padding-right: 34%;
+    
+
+}
+.a3{
+    top:17%;
+    padding-right: 53%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
