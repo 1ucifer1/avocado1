@@ -14,9 +14,16 @@ body{
     color: #D8C690;
 }
 .menu {
+    /* important to allign items*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    /**/
     position: absolute;
     z-index: 2;
     width: 50px;
+    height: 710px;
     background: rgb(32, 32, 32);
     top: 0;
     left:0px
@@ -24,7 +31,6 @@ body{
 
 .menu a {
     color: #D8C690;
-    display: block;
     padding: 12px;
     text-decoration: none;
     line-height: 2;
@@ -306,7 +312,7 @@ h3{
     left: 920px;
 }
 
-.all_attachments input, {
+.all_attachments input {
     border: none;
     color: #363636;
 }
@@ -370,6 +376,266 @@ h3{
     width: 419px;
     height: 340px;
 }
+/* session tap*/
+.session_tap{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5%;
+    position: fixed;
+    top: 178px;
+    left: 253px;
+    width: 1000px;
+    height: 480px;
+}
+.add1{
+    position: relative;
+    top: 10%;
+    left: 2%;
+}
+.session_tap input {
+    border: none;
+    background-color: #b1afaf;
+    color: #0c0c0c;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: left;
+    outline: none;
+    width: 80%;
+}
+
+
+.session_date{
+    position:absolute;
+    top: 0px;
+    left: 20px;
+    height: 30px;
+    width: 220px;
+}
+.next_date{
+    position:absolute;
+    top: 0px;
+    left: 380px;
+    width: 220px;
+}
+.session_attachments{
+    position:absolute;
+    top: 0px;
+    left: 695px
+}
+.session_attachments input{
+    border: none;
+    background-color: #ffffff;
+}
+
+.role_number{
+    position:absolute;
+    top: 89px;
+    left: 380px;
+    width: 220px;
+}
+.decision1{
+    position:absolute;
+    top: 89px;
+    left: 20px;
+    width: 220px;
+}
+.session_reason{
+    position:absolute;
+    top: 180px;
+    left: 20px;
+}
+.session_requirements1{
+    position:absolute;
+    top: 180px;
+    left: 380px;
+}
+
+.sessionreason,.sessionrequirements{
+    width: 310px;
+}
+.session_tap_buttons{
+    position: absolute;  
+    top: 204px;
+    left: 750px;
+    height: 40px;
+    width: 334px;
+}
+/* expert session tap*/
+.expertsession_tap{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5%;
+    position: fixed;
+    top: 178px;
+    left: 253px;
+    width: 1000px;
+    height: 480px;
+}
+.expertsession_tap input{
+    border: none;
+    background-color: #b1afaf;
+    color: #0c0c0c;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: left;
+    outline: none;
+    width: 80%;
+}
+.office_addressDIV{
+    position:absolute;
+    top: 0px;
+    left: 20px;
+    height: 30px;
+    width: 300px;
+}
+.expert_session_dateDIV{
+    position:absolute;
+    top: 0px;
+    left: 350px;
+    width: 300px;
+}
+.session_attachmentsDIV{
+    position:absolute;
+    top: 0px;
+    left: 680px;
+    width: 300px;
+}
+.session_attachmentsDIV input{
+    border: none;
+    background-color: #ffffff;
+}
+
+.expert_nameDIV{
+    position:absolute;
+    top: 89px;
+    left: 350px;
+    width: 300px;
+}
+.decisionDIV{
+    position:absolute;
+    top: 89px;
+    left: 20px;
+    width: 300px;
+}
+.session_requirementsDIV{
+    position:absolute;
+    top: 180px;
+    left: 20px;
+}
+.session_requirements{
+    width: 310px;
+    top:22px;
+    left: 0px;
+    
+}
+
+.session_buttons3{
+    position: absolute;
+    top: 209px;
+    left: 415px;
+    height: 40px;
+    width: 334px;
+}
+/*investigation tap*/ 
+.investigation_tap{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5%;
+    position: fixed;
+    top: 178px;
+    left: 253px;
+    width: 1000px;
+    height: 480px;
+}
+.add2{
+    position: relative;
+    top: 10%;
+    left: 2%;
+}
+.investigation_tap input{
+    border: none;
+    background-color: #b1afaf;
+    color: #0c0c0c;
+    position: relative;
+    left: 20px;
+    top: 6px;
+    text-align: left;
+    outline: none;
+    width: 75%;
+}
+.topic{
+    position:absolute;
+    top: 0px;
+    left: 20px;
+    height: 30px;
+    width: 300px;
+}
+.date{
+    position:absolute;
+    top: 89px;
+    left: 20px;
+    width: 300px;
+}
+.contender2{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    width: 300px;
+}
+
+.lawyer{
+    position: absolute;
+    top: 89px;
+    left: 300px;
+    width: 300px;
+}
+.investigationPlace{
+    position: absolute;
+    top: 178px;
+    left: 300px;
+    width: 300px;
+}
+
+.decision{
+    position: absolute;
+    top: 178px;
+    left: 20px;
+    width: 300px;
+}
+
+
+.attachments{
+    position: absolute;
+    top: 0px;
+    left: 580px;
+    
+    
+}
+
+.attachments input{
+    background-color: #ffffff;
+}
+.notes2{
+    position: absolute;
+    top: 60px;
+    left: 580px;    
+}
+.notes2_textbox{
+    position: relative;
+    top: 0px;
+    width: 310px;
+    height: 145px;
+}
+.investigation_buttons{
+    position: absolute;
+    top: 255px;
+    left: 415px;
+    height: 40px;
+    width: 334px;
+}
+/**/
 .label1{
     position: absolute;
     top: 160px;

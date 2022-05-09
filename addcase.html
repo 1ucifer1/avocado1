@@ -48,30 +48,17 @@
     </div>
     <!-- -->
     <div class="menu">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
         <a href="agenda.html" title="agenda"><i class="fa-solid fa-calendar"></i></a>
-        <br>
+        
         <a href="legislations.html" title="legislations"><i class="fa-solid fa-newspaper"></i></a>
-        <br>
+        
         <a href="models.html" title="models"><i class="fa-solid fa-file-contract"></i></a>
-        <br>
+        
         <a href="caselist.html" title="case list"><i class="fa-solid fa-box-archive"></i></a>
-        <br>
+        
         <a href="clientlist.html" title="client list"><i class="fa-solid fa-user-group"></i></a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
     </div>
 
     <div class="parent" id="parent">
@@ -138,7 +125,7 @@
         
             <div class="session">
                 
-                <button class="go_session" id="go_session" formaction="session.html"><i class="fa fa-user"></i> Session</button>
+                <button  type="button" class="go_session" id="go_session" onclick="session_show()"><i class="fa fa-user"></i> Session</button>
 
             </div>
 
@@ -146,7 +133,7 @@
 
             <div class="expert_session">
                 
-                <button class="go_exsession" id="go_exsession" formaction="expertsession.html"> <i class="fa fa-user-doctor"></i> Expert Session</button>
+                <button type="button" class="go_exsession" id="go_exsession" onclick="expert_session_show()"> <i class="fa fa-user-doctor"></i> Expert Session</button>
             </div>
 
             <div class="expenses">
@@ -177,8 +164,7 @@
             
             
             <div class="investigation">
-                
-                <button class="go_investigation" id="go_investigation" formaction="investigation.html"><i class="fa fa-user-secret "></i> Investigation</button>
+                <button type="button" class="go_investigation" id="go_investigation" onclick="investigationtan_show()" ><i class="fa fa-user-secret "></i> Investigation</button>
             </div>
            
             <div class="content">
@@ -204,50 +190,55 @@
             </div>
         </div>
                     <!-- the expense tap-->
-                    <div class="expense_tap" id="expense_tap" style="display:none;" >
+
+                    <div class="expense_tap" id="expense_tap" style="display:none;">
                         <div class="searchResult">
                             <table class="table-sort">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Expense</th>
-                                        <th scope="col">Expense Name</th>
+                                        <th scope="col">Payment</th>
+                                        <th scope="col">payment Name</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <!--   <tr>
+                                         <tr>
                                         <td>500</td>
                                         <td>papers</td>
                                         
                                     </tr>
                                     <tr>
-                                     <td>25</td>
-                                     <td>transportations</td>
-                                     
+                                    <td>25</td>
+                                    <td>transportations</td>
                                     </tr>
                                     <tr>
                                         <td>25</td>
                                         <td>transportations</td>
-                                        
-                                       </tr>    
-                                       <tr>
-                                        <td>25</td>
-                                        <td>transportations</td>
-                                       </tr>
-                                       -->
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>transportationssssssssssssssssssssssss</td>
+                                            </tr>
+                                            <tr>
+                                                <td>25</td>
+                                                <td>transportations</td>
+                                                </tr>
                                 </tbody>
                              </table>
                          </div>
-                    <form class="okokoko">
-                        <input type="text" id="expense" class="expense"  placeholder="Expense">
-                        <hr class="hr1"><br>
-                        <input type="text" id="expense_name" class="expense_name" placeholder="Expense Name">
-                        <hr class="hr1"><br>
-                        <button class="save">Save </button>
-                        <button  class="back"  onclick="expense_hide()"> Back</button>
-                    </form>
+                        <form action="">
+                            <input type="text" id="expense" class="expense" placeholder="Expense">
+                            <hr class="hr1"><br>
+                            
+                            <input type="text" id="expense_name" class="expense_name"  placeholder="Expense Name">
+                            <hr class="hr1"><br>
+                            
+                            <div class="session_buttons1">
+                                <button class="save">Save </button>
+                                <button type="button" class="back" id="back" onclick="expense_hide()"> Back</button>
+                                
+                            </div>
+                        </form>
                     </div>
-                    
-
 
                     <!-- the payment tap -->
             <div class="payment_tap" id="payment_tap" style="display:none;">
@@ -291,14 +282,202 @@
                     <input type="text" id="payment_name" class="payment_name"  placeholder="Payment Name">
                     <hr class="hr1"><br>
                     
-                    <div class="session_buttons">
+                    <div class="session_buttons2">
                         <button class="save2">Save </button>
-                        <button class="back" id="back" onclick="payment_hide()"> Back</button>
+                        <button type="button" class="back" id="back" onclick="payment_hide()"> Back</button>
                         
                     </div>
                 </form>
             </div>
             
+            <!-- session tap-->
+
+            <div class="session_tap" id="session_tap" style="display:none;">
+            <form class="add1">
+                   
+            <div class="session_date">
+                <i class="fa-solid fa-calendar iconFilter"></i>
+                <label for="session_date" class="inputsName">Session Date</label>
+                <br>
+                <input type="date" id="session_date" class="Session_date"  placeholder="Session Date">
+            </div>
+            
+            <div class="next_date">
+                <i class="fa-solid fa-calendar-plus iconFilter"></i>
+                <label for="next_date" class="inputsName">Next Date</label>
+                <br>
+                <input type="date" id="next_date" class="Nnext_date"  placeholder="Next Date" >
+            </div>
+            
+            <div class="session_attachments">
+                <i class="fa-solid fa-paperclip iconFilter"></i>
+                <label for="session_Attachments" class="inputsName">Session Attachments</label>
+                <br>
+                <input type = "file" id="session_Attachments" class="session_Attachments" placeholder="Session_attachments" accept = "image/*" multiple="multiple" />
+            </div>
+            
+            <div class="role_number">
+                <i class="fa-solid fa-list-numeric iconFilter"></i>
+                <label for="role_number" class="inputsName">Role Number</label>
+                <br>
+                <input type="text" id="role_number" class="Role_number" placeholder="Role Number">
+            </div>
+            
+            <div class="decision1">
+                <i class="fa-solid fa-signature iconFilter"></i>
+                <label for="decision" class="inputsName">Decision</label>
+                <br>
+                <input type="text" id="decision" class="Decision" placeholder="Decision">
+            </div>
+
+            <div class="session_requirements1">
+                <i class="fa-solid fa-note-sticky iconFilter"></i>
+                <label for="session_requirements" class="inputsName">Session Requirements</label>
+                <br>
+                <textarea name="session_requirements" id="session_requirements" class="sessionrequirements" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="session_reason">
+                <i class="fa-solid fa-notes-medical iconFilter"></i>
+                <label for="session_reason" class="inputsName">Session Reason</label>
+                <br>
+                <textarea name="session_reason" id="session_reason" class="sessionreason" cols="30" rows="10"></textarea>
+            </div>
+            
+
+            <div class="session_tap_buttons">
+                <form>
+                    <button class="save"><i class="fa fa-save"></i> SAVE </button>
+                    <br>
+                    <button type="button" class="back" onclick="session_hide()"><i class="fa fa-backward"></i> BACK</button>
+                </form>
+            </div>
+        </form>
+        </div>
+
+          <!-- the expert session tap-->
+
+          <div class="expertsession_tap" id="expertsession_tap" style="display:none;">
+                <form class="add1">
+                    <div class="office_addressDIV">
+                        <i class="fa-solid fa-building iconFilter"></i>
+                        <label for="office_address" class="inputsName">Office Address</label>
+                        <br>
+                        <input type="text" id="office_address" class="office_address"  placeholder="Next Date" >
+                    </div>
+        
+                    <div class="expert_session_dateDIV">
+                        <i class="fa-solid fa-calendar iconFilter"></i>
+                        <label for="expert_session_date" class="inputsName">Expert Session Date</label>
+                        <br>
+                        <input type="date" id="expert_session_date" class="expert_session_date"  placeholder="Expert Session Date">
+                    </div>
+        
+                    <div class="session_attachmentsDIV">
+                        <i class="fa-solid fa-paperclip iconFilter"></i>
+                        <label for="session_Attachments" class="inputsName">Session Attachments</label>
+                        <br>
+                        <input type = "file" id="session_Attachments" class="session_attachments" placeholder="Session_attachments" accept = "image/*" multiple="multiple" />
+                    </div>
+                    
+                    <div class="expert_nameDIV">
+                        <i class="fa-solid fa-user-doctor iconFilter"></i>
+                        <label for="expert_name" class="inputsName">Expert Name</label>
+                        <br>
+                        <input type="text" id="expert_name" class="expert_name" placeholder="Expert Name">
+                    </div>
+                    
+                    <div class="decisionDIV">
+                        <i class="fa-solid fa-signature iconFilter"></i>
+                        <label for="decision" class="inputsName">Decision</label>
+                        <br>
+                        <input type="text" id="decision" class="decision" placeholder="Decision">
+                    </div>
+        
+                    <div class="session_requirementsDIV">
+                        <i class="fa-solid fa-note-sticky iconFilter"></i>
+                        <label for="session_requirements" class="inputsName">Session Requirements</label>
+                        <br>
+                        <textarea name="session_requirements" class="session_requirements" cols="30" rows="10"></textarea>
+                    </div>
+                    
+        
+                    <div class="session_buttons3">
+                        <button class="save"><i class="fa fa-save"></i> SAVE</button>
+                        <br>
+                        <button type="button" class="back" id="back" onclick="expert_session_hide()"><i class="fa fa-backward"></i> BACK</button>
+                    </div>
+                </form>
+        </div>
+        <!-- investigation tap -->
+        <div class="investigation_tap" id="investigation_tap" style="display:none;">
+            
+        <form class="add2">
+            
+            <div class="topic">
+                <label for="topic" class="inputsName"><i class="fa fa-file-text iconFilter"></i> Topic</label>
+                <br>
+                <input type="text" class="topic_name" placeholder="Topic">    
+                <br>
+            </div>
+
+            <div class="date">
+                <label for="date" class="inputsName"><i class="fa fa-calendar iconFilter"></i> Date</label>
+                <br>
+                <input type="date" class="investigation_date" >
+                <br>
+            </div>
+
+            <div class="decision">
+                <label for="decision" class="inputsName"><i class="fa fa-arrow-right-to-file iconFilter"></i> Decision</label>
+                <br>
+                <input type="text"  class="decision_made" placeholder="Decision">
+                <br>
+            </div>
+
+            <div class="notes2">
+                <label for="notes2" class="inputsName2"><i class="fa fa-note-sticky iconFilter"></i> Notes</label>
+                <br>
+                <textarea name="notes2" class="notes2_textbox"></textarea>
+                <br>
+            </div>
+
+            <div class="contender2">
+                <label for="contender" class="inputsName"><i class="fa fa-person-circle-xmark iconFilter"></i> Contender</label>
+                <br>
+                <input type="text" class="contender2_name">
+                <br>
+            </div>
+
+            <div class="lawyer">
+                <label for="lawyer" class="inputsName"><i class="fa fa-person-half-dress iconFilter"></i> Lawyer</label>
+                <br>
+                <input type="text" class="lawyer_name">
+                <br>
+            </div>
+
+            <div class="investigationPlace">
+                <label for="investigationPlace" class="inputsName"><i class="fa fa-building-shield iconFilter"></i> Investigation Place</label>
+                <br>
+                <input type="text" class="investigationPlace_name" >
+                <br>
+            </div>
+
+            <div class="attachments">
+                <label for="attachments" class="inputsName"><i class="fa fa-paperclip iconFilter"></i> Attachments</label>
+                <br>
+                <input type = "file" name="attachments" class="attachmentsPos" accept = "image/*" multiple="multiple">
+                <br>
+            </div>
+
+            <div class="investigation_buttons">
+                <button class="save"><i class="fa fa-save"></i> SAVE</button>
+                <br>
+                <button type="button" class="back" id="back" onclick="investigationtan_hide()"><i class="fa fa-backward"></i> BACK</button>
+            </div>
+            
+        </form>
+    </div>
             <!-- add client tap-->
             <div class="add_tap" id="add_tap" style="display:none;">
                 <form class="add">
@@ -326,6 +505,7 @@
             </div>
         </form>
 
+
         <!-- java script -->
         <script>
             function add_show(){
@@ -334,41 +514,70 @@
                 addtap.style.display="block";
                 pos.style.opacity="20%";
             }
-        </script>
-        <script>
-                function add_hide(){
-                        var addtap = document.getElementById("add_tap");
-                        var pos = document.getElementById("pos");
-                        addtap.style.display="none";
-                        pos.style.opacity="100%";                   
+            function add_hide(){
+                    var addtap = document.getElementById("add_tap");
+                    var pos = document.getElementById("pos");
+                    addtap.style.display="none";
+                    pos.style.opacity="100%";                   
                     }
-        </script>
-        <script>
+            function session_show(){
+                    var sessiontap = document.getElementById("session_tap");
+                    var pos = document.getElementById("pos");
+                    sessiontap.style.display="block";
+                    pos.style.opacity="20%";                   
+                    }
+            function session_hide(){
+                    var sessiontap = document.getElementById("session_tap");
+                    var pos = document.getElementById("pos");
+                    sessiontap.style.display="none";
+                    pos.style.opacity="100%";                   
+                    }
+
+            function expert_session_show(){
+                    var exsessiontap = document.getElementById("expertsession_tap");
+                    var pos = document.getElementById("pos");
+                    exsessiontap.style.display="block";
+                    pos.style.opacity="20%";                   
+                    }
+            function expert_session_hide(){
+                    var exsessiontap = document.getElementById("expertsession_tap");
+                    var pos = document.getElementById("pos");
+                    exsessiontap.style.display="none";
+                    pos.style.opacity="100%";                   
+                    }
+             function investigationtan_show(){
+                    var investigationtab = document.getElementById("investigation_tap");
+                    var pos = document.getElementById("pos");
+                    investigationtab.style.display="block";
+                    pos.style.opacity="20%";                   
+                    }
+            function investigationtan_hide(){
+                    var investigationtab = document.getElementById("investigation_tap");
+                    var pos = document.getElementById("pos");
+                    investigationtab.style.display="none";
+                    pos.style.opacity="100%";                   
+                    }
             function expense_show(){
                 var expensetap = document.getElementById("expense_tap");
                 var pos = document.getElementById("pos");
                 expensetap.style.display="block";
                 pos.style.opacity="20%";
             }
-        </script>
-        <script>
+ 
             function expense_hide() {
-            var expensetap = document.getElementById("expense_tap");
-            var pos = document.getElementById("pos");
-            expensestap.style.display="none";
-            pos.style.opacity="100%";    
-                        }
-        </script>
-        <script>
+                    var expensetap = document.getElementById("expense_tap");
+                    var pos = document.getElementById("pos");
+                    expensetap.style.display="none";
+                    pos.style.opacity="100%";     
+            }
+
             function payment_show(){
                 var paymenttap = document.getElementById("payment_tap");
                 var pos = document.getElementById("pos");
                 paymenttap.style.display="block";
                 pos.style.opacity="20%";
             }
-        </script>
-        
-        <script>
+
             function payment_hide() {
             var paymenttap = document.getElementById("payment_tap");
             var pos = document.getElementById("pos");
